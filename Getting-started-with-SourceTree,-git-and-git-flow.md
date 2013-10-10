@@ -33,4 +33,11 @@ You need to get comfortable with the concepts of:
 
 It really helps to get confortable with the git command line while learning Git, instead of relying on the SourceTree interface. You'll need to know your way around the command line if you want to leverage the full power of Git with more advanced features like the stash, rebasing and cherry-picking. Create some test repositories to play around with the various features before trying to contribute.
 
-### 
+### Using git-flow
+SourceTree gives us a nice UI integration with git-flow, a robust workflow that helps us manage releases in a systematic way. Press the git-flow button the the SourceTree application ribbon to start with initializing git-flow on your local repository.
+
+Take the time to understand the power of git-flow (its feature branches, releases and hotfixes):
+* https://www.atlassian.com/git/workflows#!workflow-gitflow
+* Make sure you memorize the workflow illustrated here: http://danielkummer.github.io/git-flow-cheatsheet/
+
+SourceTree's git-flow integration is context aware. For example, when you are on the develop branch, SourceTree's git-flow dialog only gives you the option of starting a new release or a new feature. When you are working on a feature branch, the dialog guides you in the right direction by suggesting that you finish your feature (which merges it back into the develop branch), and so on.
