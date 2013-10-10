@@ -16,3 +16,19 @@ During installation:
 * Enter your github.com username and password
 
 ### Git basics
+If you're unfamiliar with Git, please take the time to review the basics on a tutorial site such as:
+* http://gitimmersion.com/
+* https://www.atlassian.com/git
+* http://www-cs-students.stanford.edu/~blynn/gitmagic/
+* http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
+* A look at git internals: http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
+
+You need to be comfortable with the concepts of:
+* Cloning a repo
+* Staging and committing changes
+* Branching and merging
+* Managing multiple remote branches (origin, upstream, contributors' forks, etc.)
+* Fetching and pulling
+* Pushing to your origin repo on github.com
+
+It really helps to get confortable with the git command line while learning Git, instead of relying on the SourceTree interface. You'll need to know your way around the command line if you want to leverage the full power of Git with more advanced features like the stash, rebasing and cherry-picking.
