@@ -15,3 +15,4 @@ During installation:
 * Choose Putty as SSH option
 * Enter your github.com username and password
 
+### Git basics
