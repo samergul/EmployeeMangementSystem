@@ -1,4 +1,4 @@
-This guide aims to give you step-by-step instructions on how to use SourceTree to manage your version control. For demo purposes, we'll begin by creating a new empty project on github.com
+This guide aims to give you step-by-step instructions on how to use Git through SourceTree for version control. For demo purposes, we'll begin by creating a new empty project on github.com
 
 ### Create a new project on github
 From [GSoft-SharePoint's organization page](https://github.com/organizations/GSoft-SharePoint), click on *New repository*. 
