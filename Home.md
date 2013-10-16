@@ -22,3 +22,5 @@ This guide applies to SharePoint 2013 (and 2010) farm solution development (i.e.
 * Properly setting up your resource files for uses in SharePoint XML files and in server-side code
     * Dynamite's IResourceLocator helps you abstract out SharePoint's relatively baroque resource API and fetch resources from both locations (XML and AppGlobalResources)
 * Using the EntityBinder to map your business entities to SPListItems
+
+Also, don't miss the Guide to easy, automated and repeatable SharePoint deployments using the Dynamite Powershell Toolkit.
