@@ -1,4 +1,4 @@
-The recommended git client app to contribute on Team Dynamite's project is Atlassian's SourceTree because of its dummy-proof integration of git-flow.
+The recommended git client app to contribute on Team Dynamite's project is Atlassian's SourceTree because of its [Jimmy](http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html)-proof integration of git-flow.
 
 ### Create a github.com account
 If you don't have one already, create a github.com account. If you work for [GSoft](http://www.gsoft.com), create [an issue](https://github.com/GSoft-SharePoint/Dynamite/issues) to ask one of the Team Dynamite owners to add you to a contributor's team for the project you want to work on.
@@ -40,4 +40,4 @@ Take the time to understand the power of git-flow (its feature branches, release
 * https://www.atlassian.com/git/workflows#!workflow-gitflow
 * Make sure you memorize the workflow illustrated here: http://danielkummer.github.io/git-flow-cheatsheet/
 
-SourceTree's git-flow integration is context aware. For example, when you are on the develop branch, SourceTree's git-flow dialog only gives you the option of starting a new release or a new feature. When you are working on a feature branch, the dialog guides you in the right direction by suggesting that you finish your feature (which merges it back into the develop branch), and so on.
+SourceTree's git-flow integration is context aware. For example, when you are checked out on the develop branch, SourceTree's git-flow dialog only gives you the option of starting a new release or a new feature. When you are working on a feature branch, the dialog guides you in the right direction by suggesting that you finish your feature (which merges it back into the develop branch), and so on.
