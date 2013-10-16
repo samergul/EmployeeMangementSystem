@@ -21,6 +21,7 @@ If you're unfamiliar with Git, please take the time to review the basics on a tu
 * https://www.atlassian.com/git
 * http://www-cs-students.stanford.edu/~blynn/gitmagic/
 * http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
+* Interactive web-based 15 minute tutorial: http://try.github.io/
 * A look at git internals: http://ftp.newartisans.com/pub/git.from.bottom.up.pdf
 
 You need to get comfortable with the concepts of:
