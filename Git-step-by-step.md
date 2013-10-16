@@ -27,9 +27,9 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
 
 ![srctree-home](http://i.imgur.com/2F2i0Os.png)
 
-*A. Under *Branches* you find your local branches. Any commits made on these branches will be kept locally
-    *i.e. when you commit in Git, you only affect your local branches, allowing you to keep your code under version control even if you are working offline without internet access
-*B. Under *Remotes* you'll find your remote-tracking branches. Here, we only have the *origin* remote: this is your copy of the remote repository hosted at github.com. You never commit directly on a remote-tracking branch; they are used solely as a staging area when fetching new changes from the server or when pushing your changes back to origin.
-    *In other words, when you clone a repository, two copies of the server's branches are made locally: one for your working branches and another to track and push changes to/from the github-hosted repository.
+* A. Under *Branches* you find your local branches. Any commits made on these branches will be kept locally
+    * i.e. when you commit in Git, you only affect your local branches, allowing you to keep your code under version control even if you are working offline without internet access
+* B. Under *Remotes* you'll find your remote-tracking branches. Here, we only have the *origin* remote: this is your copy of the remote repository hosted at github.com. You never commit directly on a remote-tracking branch; they are used solely as a staging area when fetching new changes from the server or when pushing your changes back to origin.
+    * In other words, when you clone a repository, two copies of the server's branches are made locally: one for your working branches and another to track and push changes to/from the github-hosted repository.
 
 ### Setup gitflow on your local repository
