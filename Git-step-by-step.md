@@ -33,6 +33,7 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
     * In other words, when you clone a repository, two copies of the server's branches are made locally: one (under *Branches*) for your working branches and another (under *Remotes*) to track and push changes to/from the github-hosted repository.
 * C. This area on the screen tells you whether your working directory is clean or dirty (i.e. whether all changes are commited or if you still have uncommited changes)
     * **First very important tip to avoid headaches**: **Never** attempt to *Checkout*, *Merge*, *Pull* or *Push* when your working copy is not clean. Always 1) stop and think, 2) stage and commit your current changes and 3) **then** move on to whatever you wanted to do next once your working directory is clean (if you don't feel like committing your changes in your current branch, you can always use the stash). The #1 rule in git-land is: **COMMIT EARLY, COMMIT OFTEN**.
+* D. This icon indicates which branch you have currently checked out. The checkmark icon on *master* under *Branches* gives you the same information: unless you checkout another branch, your next commit will be applied on *master*.
 
 ### Setup gitflow on your local repository
 
