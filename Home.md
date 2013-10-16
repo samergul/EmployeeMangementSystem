@@ -17,6 +17,8 @@ This guide applies to SharePoint 2013 (and 2010) farm solution development (i.e.
     * Using constructor injection to gracefully declare all your classes' collaborators
     * Providing your own services through Unity by building your own IRegistrationModule
 * Managing dependencies and choosing how to break up your Visual Studio solution into multiple projects
+    * A strategy on how to package third-party libraries and your own core-logic DLLs on your SharePoint farm
+    * Two approaches 
 * Properly setting up your 
 * 
 * Using the EntityBinder to map your business entities to SPListItems
