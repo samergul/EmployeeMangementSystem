@@ -38,4 +38,18 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
 ### Setup gitflow on your local repository
 Keepîng your sanity while managing releases, new features and production hot-fixes can be a challenge if you do everything manually.
 
-Gitflow is a series 
+Gitflow provides a series of high-level commands that help standardize branch management on large projects. SourceTree gives us a nifty integration with gitflow to steer our workflow in the right direction.
+
+Whenever you clone a Dynamite repository from Github, your first reflex before applying any changes should be to hit the *Git Flow* button and initialize gitflow in your repository.
+
+
+
+Select the default branch name options.
+
+
+
+The *develop* branch will be created and checked out automatically. This is the branch where most of the team's should get integrated.
+
+Gitflow must always be set up on your local copy (even if your origin already has the proper branches already created) - these settings are kept locally with each clone.
+
+
