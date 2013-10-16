@@ -10,3 +10,10 @@ Make sure to check the option to create a README file. Also, Github gives you th
 ![github-new-repo-form](http://i.imgur.com/R74Xgl7.png)
 
 You'll be redirected to your new project's home page.
+
+![github-repo-home](http://i.imgur.com/xjPp2El.png)
+
+Note:
+* A. Click on the commit count to visualize the currently selected branch's commmit history.
+* B. Use this dropdown to switch between the branches that are available. For now we only have master.
+* C. This is the repository's clone URL that we'll use shortly to clone the repository locally.
