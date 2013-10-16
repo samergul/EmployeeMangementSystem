@@ -13,7 +13,16 @@ You'll be redirected to your new project's home page.
 
 ![github-repo-home](http://i.imgur.com/xjPp2El.png)
 
-Note:
 * A. Click on the commit count to visualize the currently selected branch's commmit history.
 * B. Use this dropdown to switch between the branches that are available. For now we only have master.
 * C. This is the repository's clone URL that we'll use shortly to clone the repository locally.
+
+Now we can start SourceTree and choose *Clone / New*. Paste the repo's clone URL and map it to the local folder of your choice:
+
+![srctree-clone](http://i.imgur.com/HtFWEq3.png)
+
+Once you've cloned the repo, click on *master* under *Branches* and you'll be presented with a 1-commit version history:
+
+![srctree-home](http://i.imgur.com/2F2i0Os.png)
+
+
