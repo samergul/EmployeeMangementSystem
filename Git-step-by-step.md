@@ -13,9 +13,9 @@ You'll be redirected to your new project's home page.
 
 ![github-repo-home](http://i.imgur.com/xjPp2El.png)
 
-*A. Click on the commit count to visualize the currently selected branch's commmit history.
-*B. Use this dropdown to switch between the branches that are available. For now we only have master.
-*C. This is the repository's clone URL that we'll use shortly to clone the repository locally.
+* A. Click on the commit count to visualize the currently selected branch's commmit history.
+* B. Use this dropdown to switch between the branches that are available. For now we only have master.
+* C. This is the repository's clone URL that we'll use shortly to clone the repository locally.
 
 ### Clone your project locally with SourceTree
 
