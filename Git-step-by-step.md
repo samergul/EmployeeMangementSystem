@@ -3,7 +3,7 @@ This guide aims to give you step-by-step instructions on how to use SourceTree t
 ### Create a new project on github and clone it
 From [GSoft-SharePoint's organization page](https://github.com/organizations/GSoft-SharePoint), click on *New repository*. 
 
-![github-new-repo](http://i.imgur.com/OlXi1mc.png)
+![github-new-repo](http://i.imgur.com/3wWB8Kx.png)
 
 Make sure to check the option to create a README file. Also, Github gives you the handy option of adding a pre-configured .gitignore file: choose the CSharp settings. The typical open source license we use is MIT License.
 
