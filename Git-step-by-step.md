@@ -36,4 +36,6 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
 * D. This icon indicates which branch you have currently checked out. The checkmark icon on *master* under *Branches* gives you the same information: unless you checkout another branch, your next commit will be applied on *master*.
 
 ### Setup gitflow on your local repository
+Keepîng your sanity while managing releases, new features and production hot-fixes can be a challenge if you do everything manually.
 
+Gitflow is a series 
