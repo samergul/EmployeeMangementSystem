@@ -1,6 +1,6 @@
 This guide aims to give you step-by-step instructions on how to use SourceTree to manage your source control. For demo purposes, we'll begin by creating a new empty project on github.com
 
-### Create a new project on github and clone it
+### Create a new project on github
 From [GSoft-SharePoint's organization page](https://github.com/organizations/GSoft-SharePoint), click on *New repository*. 
 
 ![github-new-repo](http://i.imgur.com/3wWB8Kx.png)
@@ -17,7 +17,9 @@ You'll be redirected to your new project's home page.
 * B. Use this dropdown to switch between the branches that are available. For now we only have master.
 * C. This is the repository's clone URL that we'll use shortly to clone the repository locally.
 
-Now we can start SourceTree and choose *Clone / New*. Paste the repo's clone URL and map it to the local folder of your choice:
+### Clone your project locally with SourceTree
+
+Now we can start SourceTree from our work machine (from now on referred as **PC1**) and choose *Clone / New*. Paste the repo's clone URL and map it to the local folder of your choice:
 
 ![srctree-clone](http://i.imgur.com/HtFWEq3.png)
 
@@ -25,4 +27,4 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
 
 ![srctree-home](http://i.imgur.com/2F2i0Os.png)
 
-
+### Setup gitflow on your local repository
