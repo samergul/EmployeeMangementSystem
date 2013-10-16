@@ -51,9 +51,9 @@ Select the default branch name options.
 If it didn't exist yet, the *develop* branch will be created and checked out automatically. 
 
 ![gitflow-develop](http://i.imgur.com/FO1UmsH.png)
+![gitflow-develop-2](http://i.imgur.com/yg5DHcn.png)
 
 This is the branch where most of the team's should be integrated. *master* should reflect the latest stable release's state.
 
 Gitflow must always be set up on your local copy (even if your origin already has the proper branches already created) - these settings are kept locally with each clone.
-
 
