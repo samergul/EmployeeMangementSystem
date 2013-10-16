@@ -42,11 +42,11 @@ Gitflow provides a series of high-level commands that help standardize branch ma
 
 Whenever you clone a Dynamite repository from Github, your first reflex before applying any changes should be to hit the *Git Flow* button and initialize gitflow in your repository.
 
-
+![gitflow-button](http://i.imgur.com/qRsiDBJ.png)
 
 Select the default branch name options.
 
-
+![gitflow-init](http://i.imgur.com/5YEDUmn.png)
 
 The *develop* branch will be created and checked out automatically. This is the branch where most of the team's should get integrated.
 
