@@ -10,7 +10,7 @@ Welcome to the Dynamite wiki!
 
 (WIP - Coming soon...)
 
-This guide applies to SharePoint 2013 (and 2010) farm solution development (i.e. full-trust WSPs)
+This guide applies to SharePoint 2013 (and 2010) farm solution (i.e. full-trust WSPs) architecture
 * Getting started with the GSoft.Dynamite toolkit and Microsoft Unity for dependency injection
     * How to set up your first Unity application container (for service location)
     * As a first example, we introduce Dynamite's ILogger interface
