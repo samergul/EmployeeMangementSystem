@@ -14,7 +14,7 @@ This guide applies to SharePoint 2013 (and 2010) farm solution development (i.e.
 * Getting started with the GSoft.Dynamite toolkit and Microsoft Unity for dependency injection
     * How to set up your first Unity application container (for service location)
     * As a first example, we introduce Dynamite's ILogger interface
-    * Using constructor injection to gracefully declare all your classes' collaborators and avoid referring to your application container throughout your codebase
+    * Using constructor injection to gracefully declare all your classes' collaborators and to avoid referring to your application container throughout your codebase
     * Providing your own services through Unity by building your own IRegistrationModule
 * Managing dependencies and choosing how to break up your Visual Studio solution into multiple projects
     * A strategy on how to package, deploy and support multiple versions of third-party libraries and your own core-logic DLLs on your SharePoint farm
