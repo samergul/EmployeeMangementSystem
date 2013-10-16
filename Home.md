@@ -17,8 +17,9 @@ This guide applies to SharePoint 2013 (and 2010) farm solution development (i.e.
     * Using constructor injection to gracefully declare all your classes' collaborators
     * Providing your own services through Unity by building your own IRegistrationModule
 * Managing dependencies and choosing how to break up your Visual Studio solution into multiple projects
-    * A strategy on how to package third-party libraries and your own core-logic DLLs on your SharePoint farm
-    * Two approaches 
-* Properly setting up your 
+    * A strategy on how to package, deploy and support multiple versions of third-party libraries and your own core-logic DLLs on your SharePoint farm
+    * Two approaches on how to 
+* Properly setting up your resource files for uses in SharePoint XML files and in server-side code
+    * Dynamite's IResourceLocator helps you abstract out SharePoint's relatively baroque resource API and fetch resources from both locations (XML and AppGlobalResources)
 * 
 * Using the EntityBinder to map your business entities to SPListItems
