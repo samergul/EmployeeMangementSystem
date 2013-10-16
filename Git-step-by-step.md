@@ -31,5 +31,8 @@ Once you've cloned the repo, click on *master* under *Branches* and you'll be pr
     * i.e. when you commit in Git, you only affect your local branches, allowing you to keep your code under version control even if you are working offline without internet access
 * B. Under *Remotes* you'll find your remote-tracking branches. Here, we only have the *origin* remote: this is your copy of the remote repository hosted at github.com. You never commit directly on a remote-tracking branch; they are typically "read-only" and used solely as a staging area when fetching new changes from the server or when pushing your changes back to origin.
     * In other words, when you clone a repository, two copies of the server's branches are made locally: one (under *Branches*) for your working branches and another (under *Remotes*) to track and push changes to/from the github-hosted repository.
+* C. This area on the screen tells you whether your working directory is clean or dirty (i.e. whether all changes are commited or if you still have uncommited changes)
+    * **FIRST VERY IMPORTANT TIP TO AVOID HEADACHE**: **Never** attempt to *Checkout*, *Merge*, *Pull* or *Push* when your working copy is not clean. Always stop, commit, then move on to whatever you wanted to do next once your working directory is clean (if you don't feel like committing your changes, you can always use the stash). The rule in git land is: **COMMIT EARLY, COMMIT OFTEN**.
 
 ### Setup gitflow on your local repository
+
