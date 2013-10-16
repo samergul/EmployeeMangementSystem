@@ -27,9 +27,9 @@ You need to get comfortable with the concepts of:
 * Cloning a repo
 * Staging and committing changes
 * Branching and merging
-* Managing multiple remote branches (origin, upstream, contributors' forks, etc.)
 * Fetching and pulling
 * Pushing to your origin repo on github.com
+* Managing multiple remote branches (origin, upstream, contributors' forks, etc.)
 
 It really helps to get confortable with the git command line while learning Git, instead of relying on the SourceTree interface. You'll need to know your way around the command line if you want to leverage the full power of Git with more advanced features like the stash, rebasing and cherry-picking. Create some test repositories to play around with the various features before trying to contribute.
 
