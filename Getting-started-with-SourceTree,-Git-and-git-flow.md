@@ -1,3 +1,5 @@
+[< Back to wiki home](https://github.com/GSoft-SharePoint/Dynamite/wiki)
+
 The recommended git client app to contribute on Team Dynamite's project is Atlassian's SourceTree because of its [Jimmy](http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html)-proof integration of git-flow.
 
 ### Create a github.com account
