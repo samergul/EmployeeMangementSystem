@@ -8,6 +8,7 @@ Welcome to the Dynamite wiki!
     * Part 2: Basic operations - Staging, commiting, fetching, pushing, etc.
     * Part 3: Using gitflow for feature branches
     * Part 4: The stash
+    * ...
 * Advanced guide: how to back-port changes from the main Dynamite (2013) repo into Dynamite-2010's codebase
 
 ### Developer's guide
