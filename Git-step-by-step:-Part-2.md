@@ -1,4 +1,4 @@
-[< Return to Part 1](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1)__________________________________[Move on to Part 3 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-3)
+[< Return to Part 1](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1)\_\_\_\_\_\_\_\_\__________________________[Move on to Part 3 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-3)
 
 
 
