@@ -43,4 +43,5 @@ Take the time to understand the power of git-flow (its feature branches, release
 
 SourceTree's git-flow integration is context aware. For example, when you are checked out on the develop branch, SourceTree's git-flow dialog only gives you the option of starting a new release or a new feature. When you are working on a feature branch, the dialog guides you in the right direction by suggesting that you finish your feature (which merges it back into the develop branch), and so on.
 
-### Move on to Git step-by-step >
+### [Move on to Git step-by-step: Part 1 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1)
+[< Back to wiki home](https://github.com/GSoft-SharePoint/Dynamite/wiki)
