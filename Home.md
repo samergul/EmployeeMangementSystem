@@ -3,7 +3,7 @@ Welcome to the Dynamite wiki!
 ### Contributor's guide
 
 * Overview: [Getting started with SourceTree, Git and git-flow](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow)
-* Git step-by-step:
+* Git step-by-step
     * Part 1: Cloning a new repo from github.com with SourceTree, initializing gitflow
     * Part 2: Basic operations - Staging, commiting, fetching, pushing, etc.
     * Part 3: Using gitflow for feature branches
