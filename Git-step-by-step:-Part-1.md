@@ -60,3 +60,6 @@ If it didn't exist yet, the *develop* branch will be created and checked out aut
 This is the branch where most of the team's work should be integrated. *master* should reflect the latest stable release's state.
 
 Gitflow must always be set up on your local copy (even if your origin already has the proper branches already created) - these settings are kept locally with each clone.
+
+###[Move on to Part 2 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-2)
+[< Return to wiki home](https://github.com/GSoft-SharePoint/Dynamite/wiki)
