@@ -29,6 +29,13 @@ Note how only the local *develop* branch points to your new commit. All other br
 
 ###Branching and merging 101
 
+Whenever you begin work on new changes, the proper reflex in Git is to create a new branch. Branching and merging in Git is easier and thus "cheaper" than in other version control systems. Starting any new work on a brand you branch gives you more flexibility with regards to how you merge your changes back in with your teammates' (or your own) other changes once you are done.
+
+Let's continue with our example: now we want to make some experimental changes while at the same time continuing development on the *develop* branch.
+
+First, we make sure that *develop* is checked out and that our working copy is clean. Then, we can create a new *experimental-test* branch:
+
+
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
