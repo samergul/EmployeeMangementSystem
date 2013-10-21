@@ -25,13 +25,7 @@ Enter a detailed commit message then hit confirm the dialog. The main SourceTree
 
 ![srctree-commit-3](http://i.imgur.com/EyurB6z.png)
 
-Note how only the local *develop* branch points to your new commit. All other branches, including the remote origin/develop, are now "behind" the *develop* branch, so to speak.
-
-
-
-
-
-
+Note how only the local *develop* branch points to your new commit. All other branches are now "behind" the *develop* branch, so to speak.
 
 ###Branching and merging 101
 
