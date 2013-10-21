@@ -12,10 +12,10 @@ Let's illustrate with our example. We are currently on the newly-created *develo
 
 
 
-###Branches and merges 101
+###Branching and merging 101
 
 
-###Sharing your changes with your colleagues: fetching, pulling and 
+###Sharing your changes with your colleagues: fetching, pulling and pushing
 
 
 
