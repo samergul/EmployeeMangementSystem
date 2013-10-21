@@ -59,7 +59,7 @@ If it didn't exist yet, the *develop* branch will be created and checked out aut
 
 ![gitflow-develop-2](http://i.imgur.com/yg5DHcn.png)
 
-This is the branch where most of the team's work should be integrated. *master* should reflect the latest stable release's state.
+This *develop* branch is the branch where most of the team's work should be integrated. *master* should reflect the latest stable release's state.
 
 Gitflow must always be set up on your local copy (even if your origin already has the proper branches already created) - these settings are kept locally with each clone.
 
