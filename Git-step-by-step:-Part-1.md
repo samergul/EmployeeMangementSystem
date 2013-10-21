@@ -53,7 +53,8 @@ Select the default branch name options.
 
 If it didn't exist yet, the *develop* branch will be created and checked out automatically. 
 
-**Key concept**: in git, the operation of switching from one branch to another is called to "checkout". Note how that, when the new *develop* branch was automatically checked out, no copy of the code was made locally on your file system (i.e., contrary to the typical way of working with TFS or SVN, you don't need to keep a local copy of the code on your file system for each branch that you have to maintain). When you move from commit to commit with checkouts in git, git takes care of swapping the file system contents in-place.
+**Key concept**: 
+* in git, the operation of switching from one branch to another is called to "checkout". Note how that, when the new *develop* branch was automatically checked out, no second copy of the code was made locally on your file system (i.e., contrary to the typical way of working with TFS or SVN, you don't need to keep an extra local copy of the code on your file system for each branch that you have to maintain). When you move from commit to commit with checkouts in git, git takes care of swapping the file system contents in-place.
 
 ![gitflow-develop](http://i.imgur.com/FO1UmsH.png)
 
