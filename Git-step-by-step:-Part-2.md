@@ -76,11 +76,15 @@ Note in the right panel the typical merge conflict syntax of the file:
 
 ```
 <<<<<<< HEAD
-A throwaway repo for a Git tutorial by Team Dynamite
+A throwaway repo for a Git tutorial by Team Dynamite   [i.e. changes done on the current branch)
 =======
-A throwaway experimental repo for a Git tutorial
+A throwaway experimental repo for a Git tutorial       [i.e. changes done on the branch being merged into the current branch]
 >>>>>>> experimental-test
 ```
+
+The top part represents Mine, the bottom part Their. If you don't want to bother with an external conflict resolution (i.e. DiffMerge-like) tool, you can resolve the conflict simply but manually editing the text file (i.e. by removing the <<<<<<<< ======= >>>>>>>>> and keeping only the correct version of the code in the file).
+
+Once your conflict is resolved, don't forget to commit.
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
