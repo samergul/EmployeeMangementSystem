@@ -21,11 +21,11 @@ Once your changes are staged, you can *Commit*:
 
 ![srctree-commit-2](http://i.imgur.com/v3m5qig.png)
 
-Enter a detailed commit message then hit confirm the dialog. Note in the main SourceTree *Log/History* screen how your new commit is now listed:
+Enter a detailed commit message then hit confirm the dialog. The main SourceTree *Log/History* screen now lists your new commit:
 
 ![srctree-commit-3](http://i.imgur.com/EyurB6z.png)
 
-
+Note how only the local *develop* branch points to your new commit. All other branches, including the remote origin/develop, are now "behind" the *develop* branch, so to speak.
 
 
 
