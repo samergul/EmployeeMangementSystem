@@ -53,7 +53,7 @@ Third, let's switch back over to the *develop* branch (by double-clicking the br
 
 ![srctree-branch-5](http://i.imgur.com/WhCqkum.png)
 
-Note how the Log/History SourceTree view lets you visualize how the work evolved in parallel.
+Note how the Log/History SourceTree view lets you visualize how the work evolved in parallel between the *develop* and the *experimental-test* branches.
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
