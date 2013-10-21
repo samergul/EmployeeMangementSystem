@@ -84,7 +84,7 @@ A throwaway experimental repo for a Git tutorial       [i.e. changes done on the
 
 The top part represents *Mine*, the bottom part *Theirs*. If you don't want to bother with an external conflict resolution (i.e. DiffMerge-like) tool, you can resolve the conflict simply but manually editing the text file (i.e. by removing the <<<<<<<< ======= >>>>>>>>> and keeping only the correct version of the code in the file).
 
-Once your conflict is resolved, don't forget to commit right away! Note how SourceTree pre-fills your commit message with something adequate to the merge context:
+Once your conflict is resolved, don't forget to commit right away! Note how SourceTree pre-fills your commit message with something adequate to the merge context (here, we selected to resolve conflict using Mine):
 
 ![srctree-conflict-3](http://i.imgur.com/74U7mWn.png)
 
