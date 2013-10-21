@@ -21,7 +21,7 @@ Once your changes are staged, you can *Commit*:
 
 ![srctree-commit-2](http://i.imgur.com/v3m5qig.png)
 
-Enter a detailed commit message then hit confirm the dialog. The main SourceTree *Log/History* screen now lists your new commit:
+Enter a detailed commit message then hit *Commit* to confirm. The main SourceTree *Log/History* screen now lists your new commit:
 
 ![srctree-commit-3](http://i.imgur.com/EyurB6z.png)
 
