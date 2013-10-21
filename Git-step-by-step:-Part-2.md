@@ -53,7 +53,9 @@ Third, let's switch back over to the *develop* branch (by double-clicking the br
 
 ![srctree-branch-5](http://i.imgur.com/WhCqkum.png)
 
-Note how the Log/History SourceTree view lets you visualize how the work evolved in parallel between the *develop* and the *experimental-test* branches.
+Note how SourceTree's *Log/History* view helps you visualize how the work evolved in parallel between the *develop* and the *experimental-test* branches.
+
+Fourth, we want to merge the experimental changes back into *develop*. To merge from *experimental-test* **into** *develop*, we need be already checked out on *develop* (which is the case). Then, click the *Merge* button:
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
