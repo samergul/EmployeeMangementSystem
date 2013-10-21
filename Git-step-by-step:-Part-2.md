@@ -35,7 +35,13 @@ Let's continue with our example: now we want to make some experimental changes w
 
 First, we make sure that *develop* is checked out and that our working copy is clean. Then, we can create a new *experimental-test* branch:
 
+![srctree-branch](http://i.imgur.com/M4KD8bC.png)
 
+![srctree-branch-2](http://i.imgur.com/6Ski72D.png)
+
+![srctree-branch-3](http://i.imgur.com/uZw8zps.png)
+
+Note how the new *experimental-test* branch points to the same commit as the *develop* branch, which was its starting point.
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
