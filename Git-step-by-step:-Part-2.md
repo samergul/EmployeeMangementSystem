@@ -62,7 +62,19 @@ Fourth, we want to merge the experimental changes back into *develop*. To merge 
 ![srctree-merge-2](http://i.imgur.com/PAScHb8.png)
 
 
-The current branch is *develop*. As in the dialog show above, select the "topmost" commit on the *experimental-test* branch (i.e. the latest commit on that branch), then click OK.
+The current branch is *develop*. As in the dialog show above, select the "topmost" commit on the *experimental-test* branch (i.e. the latest commit on that branch), then click OK. This will merge *experimental-test* into *develop*.
+
+Because we changed the exact same line in the README in commits from both branches, a merge conflict is generated: 
+
+![srctree-conflict-1](http://i.imgur.com/vRWvRke.png)
+
+The warning is clear - **fix your merge conflicts and commit before doing anything else**. This is critical to avoid headaches; don't leave conflicting files in your working copy. The *File status* view shows you the conflicting files with a warning sign and also gives you options to quickly resolve the conflict (using Theirs/Mine) or to launch an external merge tool.
+
+![srctree-conflict-2](http://i.imgur.com/FYHMmVx.png)
+
+Note in the right panel the typical merge conflict syntax of the file:
+
+> 
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
