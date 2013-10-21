@@ -10,6 +10,24 @@ Thus, when you commit some changes, you do so locally on your own computer - whi
 
 Let's illustrate with our example. We are currently on the newly-created *develop* branch and we make a change to the README file. Note that the file status tab in SourceTree is automatically refreshed to indicate that your working copy is not clean anymore:
 
+![srctree-stage](http://i.imgur.com/SQUhuz4.png)
+
+* A. The indicator that your working copy is not clean anymore. Click on any file in the *File status* tab to make the visual diff of this file's changes appear on the right.
+* B. These buttons allow you to stage your changes: basically, you can choose to stage only changes that you wish to commit right away. This gives you the flexibility to break up your current changes into multiple granular commits (by staging each piece one at a time and committing them separately) or to keep some of your changes on hold until later.
+
+Once your changes are staged, you can *Commit*:
+
+![srctree-commit-1](http://i.imgur.com/6Z0zW88.png)
+
+![srctree-commit-2](http://i.imgur.com/v3m5qig.png)
+
+
+
+
+
+
+
+
 
 
 ###Branching and merging 101
