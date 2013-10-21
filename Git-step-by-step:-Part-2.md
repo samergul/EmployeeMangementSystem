@@ -82,9 +82,9 @@ A throwaway experimental repo for a Git tutorial       [i.e. changes done on the
 >>>>>>> experimental-test
 ```
 
-The top part represents Mine, the bottom part Their. If you don't want to bother with an external conflict resolution (i.e. DiffMerge-like) tool, you can resolve the conflict simply but manually editing the text file (i.e. by removing the <<<<<<<< ======= >>>>>>>>> and keeping only the correct version of the code in the file).
+The top part represents *Mine*, the bottom part *Theirs*. If you don't want to bother with an external conflict resolution (i.e. DiffMerge-like) tool, you can resolve the conflict simply but manually editing the text file (i.e. by removing the <<<<<<<< ======= >>>>>>>>> and keeping only the correct version of the code in the file).
 
-Once your conflict is resolved, don't forget to commit.
+Once your conflict is resolved, don't forget to commit right away!
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
