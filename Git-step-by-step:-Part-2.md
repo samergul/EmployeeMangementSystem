@@ -43,6 +43,18 @@ First, we make sure that *develop* is checked out and that our working copy is c
 
 Note how the new *experimental-test* branch points to the same commit as the *develop* branch, which was its starting point.
 
+Second, let's commit a few changes on the experimental branch:
+
+![srctree-branch-4](http://i.imgur.com/pGaoX3b.png)
+
+Now, *experimental-test* is two commits ahead.
+
+Third, let's switch back over to the *develop* branch (by double-clicking the branch, or using the *Checkout* button) and make some conflicting changes to the README file there, just to spice things up:
+
+![srctree-branch-5](http://i.imgur.com/WhCqkum.png)
+
+Note how the Log/History SourceTree view lets you visualize how the work evolved in parallel.
+
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
 
