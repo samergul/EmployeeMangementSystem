@@ -12,7 +12,7 @@ Let's illustrate with our example. We are currently on the newly-created *develo
 
 
 
-###Git branching and merging 101
+###Branches and merges 101
 
 
 ###Sharing your changes with your colleagues: fetching, pulling and 
