@@ -74,7 +74,12 @@ The warning is clear - **fix your merge conflicts and commit before doing anythi
 
 Note in the right panel the typical merge conflict syntax of the file:
 
-> 
+> <<<<<<< HEAD
+> A throwaway repo for a Git tutorial by Team Dynamite
+> =======
+> A throwaway experimental repo for a Git tutorial
+> >>>>>>> experimental-test
+
 
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
