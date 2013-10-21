@@ -57,6 +57,13 @@ Note how SourceTree's *Log/History* view helps you visualize how the work evolve
 
 Fourth, we want to merge the experimental changes back into *develop*. To merge from *experimental-test* **into** *develop*, we need be already checked out on *develop* (which is the case). Then, click the *Merge* button:
 
+![srctree-merge-1](http://i.imgur.com/9CpYDbc.png)
+
+![srctree-merge-2](http://i.imgur.com/PAScHb8.png)
+
+
+The current branch is *develop*. As in the dialog show above, select the "topmost" commit on the *experimental-test* branch (i.e. the latest commit on that branch), then click OK.
+
 ###Sharing your changes with your colleagues: fetching, pulling and pushing
 
 
