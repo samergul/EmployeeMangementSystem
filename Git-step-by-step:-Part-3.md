@@ -39,6 +39,24 @@ In TFS (or SVN), when you "Get Latest..." (or "Update") you risk generating conf
 
 In Git, when you *Fetch* from all your remotes, it is a much safer operation. All that will happen is that your local copy of the remotes' branches will be updated. It is then up to you to merge any new commits from the remote branches into your local branches.
 
+Let's continue with our example. Assume that, prior to our initial *Push*, we had cloned the original repo on another PC (referred to henceforth as **PC2**). In PC2's local repo the *Log / History* view looks like this (assuming gitflow was initialized):
+
+
+In the section above we did a *Push* on the *develop* branch from our first development environment **PC1** (e.g. your office computer). Now, we want to get those changes down on our **PC2** repository (e.g. your home laptop). Let's *Fetch* from all remotes:
+
+
+
+The result is that your local copy of the remote branches is updated, as shown here:
+
+Here, we have two equivalent options:
+
+1. *Merge* *origin/develop* into *develop* or
+2. *Pull*
+
+The end result of both operations will be this:
+
+
+
 ###Pull = Fetch + Merge
 
 If you *Pull* while checked out on your *develop* the following will happen:
