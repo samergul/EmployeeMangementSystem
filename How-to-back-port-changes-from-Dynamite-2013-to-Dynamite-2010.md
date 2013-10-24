@@ -8,7 +8,7 @@ Bleeding-edge development usually occurs in the main Dynamite project. If we wan
 
 From a SharePoint 2013 environment, create and commit some changes on the main (2013) Dynamite project. Push these changes to github.com. Let's assume that you want to apply these changes on the 2010 version as well.
 
-###Step 2: add the main Dynamite project as upstream remote on your Dynamite-2010 working copy
+###Step 2: add the main Dynamite project as upstream remote on your Dynamite-2010 local repo
 
 Now that the Dynamite 2013 version includes your changes, turn off your SP2013 VM and spin up your SharePoint 2010 environment.
 
