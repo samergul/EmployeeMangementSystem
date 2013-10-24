@@ -19,6 +19,20 @@ Before doing a *Push* it's important to *Fetch* (or *Pull*, see below) so that w
 
 So, let's publish our new *develop* branch by hitting *Push*:
 
+![push-button](http://i.imgur.com/1vLDcPp.png)
+
+The following dialog appears, giving you the option of selecting which local branches to push:
+
+![push-dialog](http://i.imgur.com/YLACipX.png)
+
+By checking the *develop* checkbox, SourceTree infers that you want to create a new remote branch (also called *develop*) and that you want your local *develop* branch to track its remote:
+
+![push-dialog-2](http://i.imgur.com/6LZQTrW.png)
+
+We can leave the experimental branch as local-only. When you confirm the dialog, your new branch is created on Github, the commits are pushed and the result is the following:
+
+![push-result](http://i.imgur.com/j6FkAOC.png)
+
 ###Get the latest server updates: Fetching
 
 In TFS (or SVN), when you "Get Latest..." (or "Update") you risk generating conflicts with your current working copy.
