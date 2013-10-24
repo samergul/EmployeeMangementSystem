@@ -26,7 +26,7 @@ Click on *Add* in the dialog that appears. Then enter the new remote details:
 
 ![backport-new-remote-2](http://i.imgur.com/YCX4Lkn.png)
 
-Confirm with OK. The upstream remote should appear, but without any branches under it, at first.
+Confirm with OK. The *upstream* remote should appear, but without any branches under it, at first.
 
 Do a *Fetch* and the remote repository's branches should appear:
 
