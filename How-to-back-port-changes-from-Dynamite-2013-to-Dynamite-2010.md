@@ -18,7 +18,7 @@ Normally, if you cloned your local repo from Github, there is already one remote
 
 Let's add a second remote: a new remote called *upstream* which points to the original main Dynamite (2013) project. 
 
-    * By convention, *upstream* this is the name of a forked repo's original location: for example if I ever forked jQuery on my personal github account, my fork would be at github.com/taoneill/jquery (i.e. my *origin*) and its *upstream* repo would be github.com/jquery/jquery.
+    *By convention, *upstream* this is the name of a forked repo's original location: for example if I ever forked jQuery on my personal github account, my fork would be at github.com/taoneill/jquery (i.e. my *origin*) and its *upstream* repo would be github.com/jquery/jquery.
 
 ![backport-new-remote](http://i.imgur.com/n07MHY3.png)
 
