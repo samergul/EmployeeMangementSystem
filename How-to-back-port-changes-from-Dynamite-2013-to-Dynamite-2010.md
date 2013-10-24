@@ -4,3 +4,17 @@ The Dynamite-2010 project is a fork of the main Dynamite project which targets S
 
 Bleeding-edge development usually occurs in the main Dynamite project. If we want to share some of these new changes with the 2010 version, we need to back-port these changes in a granular fashion (in order to avoid merging into the 2010 version code which is .NET 4.5-specific - things like async/await, etc.).
 
+###Step 1: apply your changes on the main Dynamite project's develop branch
+
+From a SharePoint 2013 environment, create and commit some changes on the main (2013) Dynamite project. Push these changes to github.com. Let's assume that you want to apply these changes 
+
+###Step 2: add the main Dynamite project as upstream remote on your Dynamite-2010 working copy
+
+Now that the Dynamite 2013 version includes your changes, turn off your SP2013 VM and spin up your SharePoint 2010 environment.
+
+Fetch and merge (i.e. pull) from Github to bring your Dynamite-2010 working copy up to date.
+
+Normally, if you cloned your local repo from Github, there is already one remote: origin, which is connected to the Dynamite-2013 Github repo. 
+
+Let's add a second remote: a new remote called *upstream* (by convention, this is the name of a forked repo's original location) which points to the original main Dynamite (2013) project.
+
