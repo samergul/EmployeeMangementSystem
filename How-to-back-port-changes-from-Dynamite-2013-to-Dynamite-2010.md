@@ -49,8 +49,6 @@ Note how the *Log / History* view now shows how the cherry-picked commit was app
 
 ![cherry-pick-result](http://i.imgur.com/W73Gkx4.png)
 
-
-
 ### Step 4: Push your back-ported changes to *origin*
 
-Your local *develop* branch now includes changes that used to be exclusive to the main Dynamite 2013 project - congrats. All you need to do now is push to Github.
+Your local *develop* branch now includes changes that used to be exclusive to the main Dynamite 2013 project - congrats. All you need to do now is push to your *origin* (i.e. Dynamite-2010) on Github.
