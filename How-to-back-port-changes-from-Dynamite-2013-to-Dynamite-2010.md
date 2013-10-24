@@ -37,6 +37,19 @@ We're now ready to bring code from *upstream* into our local repo. We have two c
 * Merge: apply all commits from *upstream/develop* onto your own *develop*. Do this when you want to update Dynamite-2010 with everything new from Dynamite(-2013). Usually, this is NOT the case (since we want to avoid merging in .NET 3.5-incompatible changes
     * To do this, simply make sure you are checked out on your local *develop* branch, choose *Merge*, select the topmost commit on the upstream/develop branch, confirm and resolve any conflicts that occur as a consequence.
 * Cherry-pick: apply only specific commit from *upstream/develop* onto your local *develop* branch. This is most likely the case.
+    * To cherry-pick *upstream* changes into your local *develop*, from the *Log / History* view, click on the commit you want to select (or CTRL-select the couple of commit you are interested in, if more than one). Then, right-click and the *Cherry Pick* option should appear:
+
+![cherry-pick](http://i.imgur.com/Ec5FBTg.png)
+
+You'll need to confirm the application of the cherry-picked commit(s) on top of your current (*develop*) branch:
+
+![cherry-pick-confirm](http://i.imgur.com/0jF39La.png)
+
+Note how the *Log / History* view now shows how the cherry-picked commit was applied on *develop*:
+
+![cherry-pick-result](http://i.imgur.com/W73Gkx4.png)
+
+
 
 ### Step 4: Push your back-ported changes to *origin*
 
