@@ -30,4 +30,12 @@ Do a *Fetch* and the remote repository's branches should appear:
 
 ![backport-new-remote-3](http://i.imgur.com/t4JHy8x.png)
 
+### Step 3: merge (or cherry pick changes) from *remotes/upstream/develop* into your local *develop* branch
 
+We're now ready to bring code from *upstream* into our local repo. We have two choices:
+
+* Merge: apply all commits from *upstream/develop* onto your own *develop*. Do this when you want to update Dynamite-2010 with everything new from Dynamite(-2013). Usually, this is NOT the case (since we want to avoid merging in .NET 3.5-incompatible changes
+    * To do this, simply make sure you are checked out on your local *develop* branch, choose *Merge*, select the topmost commit on the upstream/develop branch, confirm and resolve any conflicts that occur as a consequence.
+* Cherry-pick: apply only specific commit from *upstream/develop* onto your local *develop* branch. This is most likely the case.
+
+### Step4: Push your back-ported changes to *origin*
