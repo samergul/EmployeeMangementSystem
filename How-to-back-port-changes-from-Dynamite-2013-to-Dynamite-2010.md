@@ -38,4 +38,4 @@ We're now ready to bring code from *upstream* into our local repo. We have two c
     * To do this, simply make sure you are checked out on your local *develop* branch, choose *Merge*, select the topmost commit on the upstream/develop branch, confirm and resolve any conflicts that occur as a consequence.
 * Cherry-pick: apply only specific commit from *upstream/develop* onto your local *develop* branch. This is most likely the case.
 
-### Step4: Push your back-ported changes to *origin*
+### Step 4: Push your back-ported changes to *origin*
