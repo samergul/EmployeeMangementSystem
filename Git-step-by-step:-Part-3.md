@@ -41,19 +41,26 @@ In Git, when you *Fetch* from all your remotes, it is a much safer operation. Al
 
 Let's continue with our example. Assume that, prior to our initial *Push*, we had cloned the original repo on another PC (referred to henceforth as **PC2**). In PC2's local repo the *Log / History* view looks like this (assuming gitflow was initialized):
 
+![pc2-clone](http://i.imgur.com/bHeskUn.png)
 
 In the section above we did a *Push* on the *develop* branch from our first development environment **PC1** (e.g. your office computer). Now, we want to get those changes down on our **PC2** repository (e.g. your home laptop). Let's *Fetch* from all remotes:
 
-
+![fetch-button](http://i.imgur.com/5HjWASO.png)
 
 The result is that your local copy of the remote branches is updated, as shown here:
 
-Here, we have two equivalent options:
+![fetch-result](http://i.imgur.com/TOdJ18T.png)
 
-1. *Merge* *origin/develop* into *develop* or
-2. *Pull*
+Now, what we need to do  we have two equivalent options:
+
+* *Merge* *origin/develop* into *develop* OR
+* *Pull*
+    * If you *Pull* while checked out on your *develop* the following will happen:
+        1. Git will *Fetch* to bring your remotes/origin/develop branch up to date
+        2. Git will *Merge* any new commit from *remotes/origin/develop* into *develop*
 
 The end result of both operations will be this:
+
 
 
 
