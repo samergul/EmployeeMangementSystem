@@ -9,7 +9,7 @@ Welcome to the Dynamite wiki!
     * Part 3: [Basic remote operations - Fetching, pulling and pushing](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-3)
     * Part 4: [Using gitflow for feature branches, releases and hotfixes](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-4)
     * Part 5: [The stash is your best friend](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-5)
-* Advanced guide: 
+* Advanced guides: 
     * How to back-port changes from the main Dynamite (2013) repo into Dynamite-2010's codebase
     * Keeping two distinct TFS servers' projects in sync by using github.com as an intermediary
 
