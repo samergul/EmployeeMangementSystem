@@ -1,5 +1,7 @@
 [< Return to overview](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow)
 
+## Github, SourceTree and gitflow
+
 This guide aims to give you step-by-step instructions on how to use Git with SourceTree as client for version control on your projects. For demo purposes, we'll begin by creating a new empty project on github.com
 
 ### Create a new project on github
