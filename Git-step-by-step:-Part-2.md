@@ -1,5 +1,7 @@
 [< Return to Part 1](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1)
 
+#Basic local operations
+
 We'll now go over the basic local day-to-day source control operations you need to be familiar with.
 
 ###Your first commit
