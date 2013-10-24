@@ -93,10 +93,6 @@ Note how the *Log/History* view now shows your merge commit:
 
 ![srctree-merge-commit](http://i.imgur.com/XSDBZtD.png)
 
-###Sharing your changes with your colleagues: fetching, pulling and pushing
-
-
-
 
 ###[Move on to Part 3 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-3)
 [< Return to wiki home](https://github.com/GSoft-SharePoint/Dynamite/wiki)
