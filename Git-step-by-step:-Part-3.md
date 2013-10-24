@@ -56,22 +56,21 @@ Now, what we need to do  we have two equivalent options:
 * *Merge* *origin/develop* into *develop* OR
 * *Pull*
     * If you *Pull* while checked out on your *develop* the following will happen:
-        1. Git will *Fetch* to bring your remotes/origin/develop branch up to date
+        1. Git will *Fetch* to bring your remotes/origin/develop branch up to date (which we just did manually)
         2. Git will *Merge* any new commit from *remotes/origin/develop* into *develop*
+    * In essence, **Pull = Fetch + Merge**
 
-The end result of both operations will be this:
+If you decide to *Pull*, SourceTree will ask you which remote branch to merge into *develop*. Choose *origin/develop*:
 
+![pull-dialog](http://i.imgur.com/vDyqYK1.png)
 
+The end result of both operations will be a fast-forward (i.e. trivial merge) giving you this:
 
+![pull-result](http://i.imgur.com/isNyZlc.png)
 
-###Pull = Fetch + Merge
+Your local *develop* branch is now up-to-date with the version on Github.
 
-If you *Pull* while checked out on your *develop* the following will happen:
-
-1. Git will *Fetch* to bring your remotes/origin/develop branch up to date
-2. Git will *Merge* any new commit from *remotes/origin/develop* into *develop*
-
-###Sharing your new changes with your colleagues: fetching, pulling and pushing
+###Working in parallel: 
 
 
 
