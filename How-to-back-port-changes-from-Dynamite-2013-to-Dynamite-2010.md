@@ -30,7 +30,7 @@ Do a *Fetch* and the remote repository's branches should appear:
 
 ![backport-new-remote-3](http://i.imgur.com/t4JHy8x.png)
 
-### Step 3: merge (or cherry pick changes) from *remotes/upstream/develop* into your local *develop* branch
+### Step 3: merge (or cherry pick) changes from *remotes/upstream/develop* into your local *develop* branch
 
 We're now ready to bring code from *upstream* into our local repo. We have two choices:
 
@@ -39,3 +39,5 @@ We're now ready to bring code from *upstream* into our local repo. We have two c
 * Cherry-pick: apply only specific commit from *upstream/develop* onto your local *develop* branch. This is most likely the case.
 
 ### Step 4: Push your back-ported changes to *origin*
+
+Your local *develop* branch now includes changes that used to be exclusive to the main Dynamite 2013 project - congrats. All you need to do now is push to Github.
