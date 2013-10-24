@@ -33,7 +33,7 @@ We can leave the experimental branch as local-only. When you confirm the dialog,
 
 ![push-result](http://i.imgur.com/j6FkAOC.png)
 
-###Get the latest server updates: Fetching
+###Get the latest server updates: Fetching and Pulling
 
 In TFS (or SVN), when you "Get Latest..." (or "Update") you risk generating conflicts with your current working copy.
 
@@ -59,6 +59,8 @@ Now, what we need to do  we have two equivalent options:
         1. Git will *Fetch* to bring your remotes/origin/develop branch up to date (which we just did manually)
         2. Git will *Merge* any new commit from *remotes/origin/develop* into *develop*
     * In essence, **Pull = Fetch + Merge**
+
+To be on the safe side, try to always use *Fetch* before using *Pull*, so that you get a chance to visualize how difficult the remote-to-local merges will be.
 
 If you decide to *Pull*, SourceTree will ask you which remote branch to merge into *develop*. Choose *origin/develop*:
 
