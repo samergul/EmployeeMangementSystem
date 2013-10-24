@@ -14,7 +14,7 @@ Now that the Dynamite 2013 version includes your changes, turn off your SP2013 V
 
 Fetch and merge (i.e. pull) from Github to bring your Dynamite-2010 working copy up to date.
 
-Normally, if you cloned your local repo from Github, there is already one remote: origin, which is connected to the Dynamite-2013 Github repo. 
+Normally, if you cloned your local repo from Github, there is already one remote: *origin*, which is connected to the Dynamite-2013 Github repo. 
 
 Let's add a second remote: a new remote called *upstream* (by convention, this is the name of a forked repo's original location) which points to the original main Dynamite (2013) project.
 
@@ -24,5 +24,10 @@ Click on *Add* in the dialog that appears. Then enter the new remote details:
 
 ![backport-new-remote-2](http://i.imgur.com/YCX4Lkn.png)
 
+Confirm with OK. The upstream remote should appear, but without any branches under it, at first.
+
+Do a *Fetch* and the remote repository's branches should appear:
+
+![backport-new-remote-3](http://i.imgur.com/t4JHy8x.png)
 
 
