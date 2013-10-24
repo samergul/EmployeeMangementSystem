@@ -2,7 +2,7 @@ The main Dynamite project targets SharePoint 2013 and thus uses the .NET 4.5 run
 
 The Dynamite-2010 project is a fork of the main Dynamite project which targets SP2010 and .NET 3.5. This legacy version offers you both VS2010 and VS2012 solutions (to allow developers stuck on an older VS to contribute in spite of that)
 
-Bleeding-edge development usually occurs in the main Dynamite project. If we want to share some of these new changes with the 2010 version, we need to back-port these changes in a granular fashion (in order to avoid merging into the 2010 version code which is .NET 4.5-specific - things like async/await, etc.).
+Bleeding-edge development usually occurs in the main Dynamite project. If we want to share some of these new changes with the 2010 version, we need to backport these changes in a granular fashion (in order to avoid merging into the 2010 version code which is .NET 4.5-specific - things like async/await, etc.).
 
 ###Step 1: apply your changes on the main Dynamite project's develop branch
 
@@ -51,6 +51,6 @@ Note how the *Log / History* view now shows how the cherry-picked commit was app
 
 ![cherry-pick-result](http://i.imgur.com/W73Gkx4.png)
 
-### Step 4: Push your back-ported changes to *origin*
+### Step 4: Push your backported changes to *origin*
 
 Your local *develop* branch now includes changes that used to be exclusive to the main Dynamite 2013 project - congrats. All you need to do now is push to your *origin* (i.e. Dynamite-2010) on Github.
