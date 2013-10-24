@@ -6,7 +6,7 @@ Bleeding-edge development usually occurs in the main Dynamite project. If we wan
 
 ###Step 1: apply your changes on the main Dynamite project's develop branch
 
-From a SharePoint 2013 environment, create and commit some changes on the main (2013) Dynamite project. Push these changes to github.com. Let's assume that you want to apply these changes 
+From a SharePoint 2013 environment, create and commit some changes on the main (2013) Dynamite project. Push these changes to github.com. Let's assume that you want to apply these changes on the 2010 version as well.
 
 ###Step 2: add the main Dynamite project as upstream remote on your Dynamite-2010 working copy
 
@@ -17,4 +17,12 @@ Fetch and merge (i.e. pull) from Github to bring your Dynamite-2010 working copy
 Normally, if you cloned your local repo from Github, there is already one remote: origin, which is connected to the Dynamite-2013 Github repo. 
 
 Let's add a second remote: a new remote called *upstream* (by convention, this is the name of a forked repo's original location) which points to the original main Dynamite (2013) project.
+
+![backport-new-remote](http://i.imgur.com/n07MHY3.png)
+
+Click on *Add* in the dialog that appears. Then enter the new remote details:
+
+![backport-new-remote-2](http://i.imgur.com/YCX4Lkn.png)
+
+
 
