@@ -15,9 +15,9 @@ But there's just a single commit and a single *master* branch at the *origin*:
 
 ![push-2](http://i.imgur.com/3KLvPOz.png)
 
-Before doing a *Push* it's important to *Fetch* (or *Pull*, see below) so that we get the latest updates from the server and merge them in with our local changes. For the moment, let's assume no one has been working in parallel with us so far.
+Before doing a *Push* it's important to *Fetch* (or *Pull*, see below) so that we get the latest updates from the server and merge them in with our local changes. In a centralized version-control system like TFS (or SVN), the analog of *Pull* is "Get Latest..." (or "Update") 
 
-So, let's publish our new *develop* branch by hitting *Push*:
+For the moment, let's assume no one has been working in parallel with us so far. So, let's publish our new *develop* branch by hitting *Push*:
 
 ![push-button](http://i.imgur.com/1vLDcPp.png)
 
