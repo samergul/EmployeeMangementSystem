@@ -72,7 +72,21 @@ The end result of both operations will be a fast-forward (i.e. trivial merge) gi
 
 Your local *develop* branch is now up-to-date with the version on Github.
 
-###Working in parallel: 
+###Working in parallel
+
+Let's imaging that, for some reason, you decide to work in parallel from PC1 and PC2 (so that we can give a further example on how to share your progress with your colleagues).
+
+From PC1 we do a couple of commits locally:
+
+And from PC2 we do a few commits as well:
+
+Note how PC2 doesn't tell us "2 commits ahead" because we haven't ever done a *Push* from PC2, which means that on PC2 our local branch *develop* hasn't yet been linked as tracking branch for *origin/develop*.
+
+Now, let's push our changes from PC2 to Github. 
+
+
+
+ 
 
 
 
