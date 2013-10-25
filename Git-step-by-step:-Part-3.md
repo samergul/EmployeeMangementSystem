@@ -86,9 +86,13 @@ And from PC2 we do a few commits as well:
 
 Note how PC2 doesn't tell us "2 commits ahead" because we haven't ever done a *Push* from PC2, which means that on PC2 our local branch *develop* hasn't yet been linked as tracking branch for *origin/develop*.
 
-Now, let's push our changes from PC2 to Github:
+Now, let's push our changes from PC2 to Github, the end result being:
 
+![parallel-PC2-2](http://i.imgur.com/2BAAltg.png)
 
+So, the Github repo now has PC2's changes but not PC1's changes yet:
+
+![parallel-github-PC2only](http://i.imgur.com/MTLO3FT.png)
 
 
  
