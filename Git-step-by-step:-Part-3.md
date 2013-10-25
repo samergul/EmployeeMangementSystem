@@ -106,7 +106,7 @@ Before pushing, we always need to merge the server's latest changes into our loc
 
 ![parallel-PC1-3](http://i.imgur.com/3T4I0tI.png)
 
-If not merge conflicts occur between the changes from PC2 and our local PC1 commits, a merge commit will be automatically created, making the local *develop* branch "3 ahead" of its remote:
+If no merge conflicts occur between the changes from PC2 and our local PC1 commits, a merge commit will be automatically created, making the local *develop* branch "3 ahead" of its remote:
 
 ![parallel-PC1-4](http://i.imgur.com/OiNec92.png)
 
