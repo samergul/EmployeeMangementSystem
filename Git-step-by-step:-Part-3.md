@@ -98,9 +98,20 @@ Let's switch over back to PC1. After we *Fetch* from PC1 we now see:
 
 ![parallel-PC1-2](http://i.imgur.com/bI8X9y5.png)
 
-Note how *origin/develop* is ahead of our local *develop* by 2 commits: this explains the "2 behind" note SourceTree puts on our local *develop* branch.
+Note how *origin/develop* is ahead of our local *develop* by 2 commits: this explains the "2 behind" note SourceTree puts on our local *develop* branch. We need to *Pull* these two changes into out working copy.
 
 Also take heed of the "2 ahead" note: this means we have 2 local commits that we haven't pushed to the server yet.
+
+Before pushing, we always need to merge the server's latest changes into our local branches. Make sure you're checked out on your local *develop* branch and then use *Pull* (or *Merge*) to merge the two PC2 commits from *origin/develop* into your local PC1 *develop*:
+
+![parallel-PC1-3](http://i.imgur.com/3T4I0tI.png)
+
+If not merge conflicts occur between the changes from PC2 and our local PC1 commits, a merge commit will be automatically created, making the local *develop* branch "3 ahead" of its remote:
+
+![parallel-PC1-4](http://i.imgur.com/OiNec92.png)
+
+
+
 
 
 ###[Move on to Part 4 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-4)
