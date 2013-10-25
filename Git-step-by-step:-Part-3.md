@@ -78,11 +78,16 @@ Let's imaging that, for some reason, you decide to work in parallel from PC1 and
 
 From PC1 we do a couple of commits locally:
 
+![parallel-PC1-1](http://i.imgur.com/aYzqERZ.png)
+
 And from PC2 we do a few commits as well:
+
+![parallel-PC2-1](http://i.imgur.com/gNeaDwc.png)
 
 Note how PC2 doesn't tell us "2 commits ahead" because we haven't ever done a *Push* from PC2, which means that on PC2 our local branch *develop* hasn't yet been linked as tracking branch for *origin/develop*.
 
-Now, let's push our changes from PC2 to Github. 
+Now, let's push our changes from PC2 to Github:
+
 
 
 
