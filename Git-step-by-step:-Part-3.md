@@ -110,6 +110,17 @@ If not merge conflicts occur between the changes from PC2 and our local PC1 comm
 
 ![parallel-PC1-4](http://i.imgur.com/OiNec92.png)
 
+If merge conflicts had occurred, you would have had to 1) fix those conflicts manually or through a DiffMerge-like tool then 2) commit your merge conflict resolution changes.
+
+You can now push your changes from PC1. In the *Push* dialog, uncheck the branches you do not wish to push:
+
+![parallel-PC1-5](http://i.imgur.com/903x7a4.png)
+
+The *origin* on Github will now hold changes from both PC1 and PC2:
+
+![parallel-PC1-6](http://i.imgur.com/7CSaRPl.png)
+
+
 
 
 
