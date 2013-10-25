@@ -5,7 +5,7 @@ Git is great when you want to work offline and still be able to commit some chan
 
 ###Publishing your changes: Pushing
 
-Let's pick up where we left off with out example. Right now, we've made some local changes but we haven't published anything to our Github-hosted *origin* repo.
+Let's pick up where we left off with our example. Right now, we've made some local changes but we haven't published anything to our Github-hosted *origin* repo.
 
 We have many commits locally and a new *develop* branch:
 
