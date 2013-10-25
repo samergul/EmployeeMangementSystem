@@ -94,9 +94,13 @@ So, the Github repo now has PC2's changes but not PC1's changes yet:
 
 ![parallel-github-PC2only](http://i.imgur.com/MTLO3FT.png)
 
+Let's switch over back to PC1. After we *Fetch* from PC1 we now see:
 
- 
+![parallel-PC1-2](http://i.imgur.com/bI8X9y5.png)
 
+Note how *origin/develop* is ahead of our local *develop* by 2 commits: this explains the "2 behind" note SourceTree puts on our local *develop* branch.
+
+Also take heed of the "2 ahead" note: this means we have 2 local commits that we haven't pushed to the server yet.
 
 
 ###[Move on to Part 4 >](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-4)
