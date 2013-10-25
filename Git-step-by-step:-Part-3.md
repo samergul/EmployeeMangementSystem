@@ -102,7 +102,7 @@ Note how *origin/develop* is ahead of our local *develop* by 2 commits: this exp
 
 Also take heed of the "2 ahead" note: this means we have 2 local commits that we haven't pushed to the server yet.
 
-Before pushing, we always need to merge the server's latest changes into our local branches. Make sure you're checked out on your local *develop* branch and then use *Pull* (or *Merge*) to merge the two PC2 commits from *origin/develop* into your local PC1 *develop*:
+Before pushing, we always need to merge the server's latest changes into our local branches. **Make sure you're checked out on your local *develop* branch** (to avoid confusion, you should always Pull into the local branch that tracks its corresponding remote - for example, avoid pulling from *origin/master* into *develop*, instead pull *origin/develop* into *develop* and *origin/master* into *master*). Then, use *Pull* (or *Merge*) to merge the two PC2 commits from *origin/develop* into your local PC1 *develop*:
 
 ![parallel-PC1-3](http://i.imgur.com/3T4I0tI.png)
 
