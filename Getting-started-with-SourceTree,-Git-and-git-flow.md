@@ -18,7 +18,7 @@ During installation:
 * Enter your github.com username and password
 
 ### Git basics
-If you're unfamiliar with Git, please take the time to review the basics on a tutorial site such as:
+If you're unfamiliar with Git, take a walk through our [step-by-step guide](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1). Also, please take the time to review the basics on a tutorial site such as:
 * http://gitimmersion.com/
 * https://www.atlassian.com/git
 * http://www-cs-students.stanford.edu/~blynn/gitmagic/
