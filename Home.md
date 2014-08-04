@@ -14,7 +14,7 @@ All of Team Dynamite's projects are hosted on Github. We recommend using Atlassi
 * Advanced guides: 
     * How to back-port changes from the main Dynamite (2013) repo into Dynamite-2010's codebase
 
-### Building modular SharePoint farm solutions with Dynamite
+### Building maintanable and modular SharePoint farm solutions with Dynamite
 
 SharePoint 2013 introduces the new App-model for SharePoint custom solution development. While Apps have the benefit of de-coupling your custom functionality from your mission-critical on-premise SharePoint infrastructure, the SharePoint client-side APIs do come with some limitations.
 
