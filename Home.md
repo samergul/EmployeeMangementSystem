@@ -27,22 +27,20 @@ However, full-trust SharePoint solution development is still the most powerful o
 
 Some essential values put forward by Dynamite are the following:
 
-* Modular WSP architecture 
+* A truly modular WSP architecture 
     * to promote code reuse across projects
-    * to enable easier testability for your components
+    * to make your components easily testable
     * to provide extension points for alternative usages of your features (i.e. configurability)
-* Entirely automated deployments through PowerShell
+    * to avoid massive multi-project deployments when possible (i.e. modular rather than monolithic deployments)
+* Entirely automated deployments through templated PowerShell scripts
     * to avoid error-prone manual operations at all costs
     * to provide a reproducible installation process across any SharePoint environment
-* Code-driven, self-correcting feature activation
-    * to reduce the risk of upgrading your SharePoint solution
+* Intelligent, code-driven, self-correcting features
+    * to reduce risk when upgrading your SharePoint solutions
     * to eliminate your dependency on SharePoint's often hard-to-upgrade XML-based definitions
     * to easily maintain your solutions in the long term within the enterprise
 
-
-Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide]. The Dynamite toolkit and the guide that follows are the end results of applying these ideas in the wild in real-life enterprise scenarios.
-
-
+Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide]. The Dynamite toolkit and the guide that follows are the end results of applying these ideas in the wild in real-life enterprise scenarios since 2010.
 
 (WIP - Coming soon...)
 
