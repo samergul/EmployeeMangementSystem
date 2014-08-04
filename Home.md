@@ -62,14 +62,15 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 * Installing Dynamite's very own PowerShell module
 * Templating your PowerShell scripts thanks to the ```Update-DSPTokens``` command
 * Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.)
-* SharePoint's great upgrade conundrum: what to do with "click-programming" customizations that took place since your last deployment?
 
 ### 3. Making the best of Dynamite: discover its powerful and time-saving utilities
 
 * Easy logging to the ULS (SharePoint's Unified Logging System) thanks to Dynamite's ILogger
 * Error-free resource management through the IResourceLocator interface
 * The case for intelligent, code-driven, self-correcting features
-    * E.g. provision your content types and lists programmatically instead of through XML for maximum flexibility during upgrades
+    * E.g. provision your content types and lists programmatically instead of through XML for maximum 
+flexibility during upgrades
+    * SharePoint's great upgrade conundrum: what to do with "click-programming" customizations that took place since your last deployment?
 * Promote the isolation and testability of business logic through easily serializable Entities and Dynamite's entity mapping utilities.
 * Centralize your Javascript dependencies to avoid script conflict in your web pages
 
