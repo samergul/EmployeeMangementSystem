@@ -41,7 +41,40 @@ Some essential values put forward by Dynamite are the following:
 
 Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide](http://msdn.microsoft.com/en-us/library/ff770300.aspx). The Dynamite toolkit and the guide that follows are the end results of applying many of these ideas in the wild in real-life enterprise scenarios since 2010.
 
-### 1. A modular approach to building SharePoint farm solutions
+### 1. A modular approach to building SharePoint farm solutions with Dynamite and Autofac
+
+* What is dependency injection?
+    * A quick primer on why inversion of control and dependency injection are "good things"
+    * A case for using constructor injection for all your classes' dependencies
+* Building your first Module and Service Locator
+    * How to break up your Visual Studio solution in many projects with their own responsibilities
+    * How to set up your first application-wide Autofac service locator
+    * How to provide your own reusable services through an Autofac registration module
+    * Do's and Don'ts of Service Locator usage
+* Managing assembly versions and assembly dependencies
+    * Avoid the pitfalls of full-trust development in GAC-based scenarios
+    * Best practices for versionning and dependency management
+
+### 2. Automating your deployments with the Dynamite PowerShell Toolkit
+
+* On the evils of Visual Studio-based deployments
+* Installing Dynamite's very own PowerShell module
+* Templating your PowerShell scripts thanks to the ```Update-DSPTokens``` command
+* Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.) 
+
+### 3. Making the best of Dynamite: discover its powerful and time-saving utilities
+
+* Easy logging to the ULS (SharePoint's Unified Logging System) thanks to Dynamite's ILogger
+* Error-free resource management through the IResourceLocator interface
+* Promote the isolation and testability of business logic through Entities and Dynamite's entity mapping utility.
+* ...
+
+
+
+ 
+
+
+
 
 * Getting started with the GSoft.Dynamite toolkit and Microsoft Unity for dependency injection
     * How to set up your first Unity application container (for service location)
