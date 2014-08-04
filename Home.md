@@ -2,6 +2,8 @@ Welcome to the Dynamite wiki!
 
 ### Git beginner's guide
 
+All of Team Dynamite's projects are hosted on Github. We recommend using Atlassian's SourceTree git client for source control management. This guide should help you get started on the path to contributing to Dynamite's project.
+
 * Overview: [Getting started with SourceTree, Git and git-flow](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow)
 * Git step-by-step:
     * Part 1: [Cloning a new repo from github.com with SourceTree, initializing gitflow](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-1)
