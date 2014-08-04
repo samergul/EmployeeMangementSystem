@@ -15,7 +15,11 @@ All of Team Dynamite's projects are hosted on Github. We recommend using Atlassi
     * How to back-port changes from the main Dynamite (2013) repo into Dynamite-2010's codebase
     * Keeping two distinct TFS servers' projects in sync by using github.com as an intermediary
 
-### Developer's guide
+### A guide for building truly modular SharePoint solutions and reusable components with the Dynamite toolkit
+
+
+
+
 
 (WIP - Coming soon...)
 
