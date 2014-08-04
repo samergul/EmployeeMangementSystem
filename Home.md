@@ -25,10 +25,22 @@ However, full-trust SharePoint solution development is still the most powerful o
 
 [The Dynamite project](https://github.com/GSoft-SharePoint/Dynamite) for SharePoint 2013 (built by GSoft's SharePoint development experts - Team Dynamite) is a C# toolkit of reusable components that guide you into the "right" path for full-trust solution development. A version of [Dynamite for SharePoint 2010](https://github.com/GSoft-SharePoint/Dynamite-2010) is also available, for all of you who are still supporting legacy environments.
 
-The values put forward by Dynamite are the following:
+Some essential values put forward by Dynamite are the following:
+
+* Modular WSP architecture 
+** to promote code reuse across projects
+** to enable easier testability for your components
+** to provide extension points for alternative usages of your features (i.e. configurability)
+* Entirely automated deployments through PowerShell
+** to avoid error-prone manual operations at all costs
+** to provide a reproducible installation process across any SharePoint environment
+* Code-driven, self-correcting feature activation
+** to reduce the risk of upgrading your SharePoint solution
+** to eliminate your dependency on SharePoint's often hard-to-upgrade XML-based definitions
+** to easily maintain your solutions in the long term within the enterprise
 
 
-
+Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide]. The Dynamite toolkit and the guide that follows are the end results of applying these ideas in the wild in real-life enterprise scenarios.
 
 
 
