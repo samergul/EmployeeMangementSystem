@@ -26,7 +26,7 @@ However, full-trust SharePoint solution development is still the most powerful o
 
 Some essential values put forward by Dynamite are the following:
 
-* A truly modular WSP architecture through Dependency Injection
+* A truly modular architecture through Dependency Injection
     * to promote code reuse across projects
     * to make your components easily testable
     * to provide extension points for alternative usages of your features (i.e. configurability)
