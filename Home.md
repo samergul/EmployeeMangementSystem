@@ -22,7 +22,7 @@ Microsoft's guidelines are clear: [in 2013, whenever possible, build things the 
 
 However, full-trust SharePoint solution development is still the most powerful option for customizing your SharePoint 2013 farm. If you are still developing in a SharePoint 2010 context, farm solutions are your only option (if we ignore the unpopular and [soon-to-be-deprecated](http://blogs.msdn.com/b/sharepointdev/archive/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions.aspx) sandbox solution model).
 
-[The Dynamite project](https://github.com/GSoft-SharePoint/Dynamite) for SharePoint 2013 (built by GSoft's SharePoint development experts - Team Dynamite) is a C# toolkit of reusable components that guide you into the "right" path for full-trust solution development. A version of [Dynamite for SharePoint 2010](https://github.com/GSoft-SharePoint/Dynamite-2010) is also available, for all of you who are still supporting legacy environments.
+[The Dynamite project](https://github.com/GSoft-SharePoint/Dynamite) for SharePoint 2013 (built by [GSoft](http://gsoft.com)'s SharePoint development experts - Team Dynamite) is a C# toolkit of reusable components that guide you into the "right" path for full-trust solution development. A version of [Dynamite for SharePoint 2010](https://github.com/GSoft-SharePoint/Dynamite-2010) is also available, for all of you who are still supporting legacy environments.
 
 Some essential values put forward by Dynamite are the following:
 
