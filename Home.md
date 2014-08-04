@@ -41,7 +41,7 @@ Some essential values put forward by Dynamite are the following:
 
 Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide](http://msdn.microsoft.com/en-us/library/ff770300.aspx). The Dynamite toolkit and the guide that follows are the end results of applying many of these ideas in the wild in real-life enterprise scenarios since 2010.
 
-## 1. A modular approach to building SharePoint farm solutions
+### 1. A modular approach to building SharePoint farm solutions
 
 * Getting started with the GSoft.Dynamite toolkit and Microsoft Unity for dependency injection
     * How to set up your first Unity application container (for service location)
