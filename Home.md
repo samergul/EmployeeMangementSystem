@@ -61,7 +61,8 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 * On the evils of Visual Studio-based deployments
 * Installing Dynamite's very own PowerShell module
 * Templating your PowerShell scripts thanks to the ```Update-DSPTokens``` command
-* Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.) 
+* Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.)
+* SharePoint's great upgrade conundrum: what to do with "click-programming" customization that took place since your last deployment?
 
 ### 3. Making the best of Dynamite: discover its powerful and time-saving utilities
 
