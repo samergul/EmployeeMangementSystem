@@ -19,8 +19,7 @@ All of Team Dynamite's projects are hosted on Github. We recommend using Atlassi
 ### Why Dynamite? Why farm solutions?
 SharePoint 2013 introduces the new App-model for SharePoint custom solution development. Microsoft's guidelines are clear: [in 2013, whenever possible, build things the App-way](http://msdn.microsoft.com/en-us/library/office/jj163114(v=office.15).aspx). While Apps have the benefit of de-coupling your custom functionality from your mission-critical on-premise SharePoint infrastructure, the SharePoint client-side APIs do come with some limitations.
 
-
-However, full-trust SharePoint solution development is still the most powerful option for customizing your SharePoint 2013 farm. If you are still developing in a SharePoint 2010 context, farm solutions are your only option (if we ignore the unpopular and [soon-to-be-deprecated](http://blogs.msdn.com/b/sharepointdev/archive/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions.aspx) sandbox solution model).
+Full-trust SharePoint solution development is still the most powerful option for customizing your SharePoint 2013 farm. If you are still developing in a SharePoint 2010 context, farm solutions are your only option (if we ignore the unpopular and [soon-to-be-deprecated](http://blogs.msdn.com/b/sharepointdev/archive/2014/01/14/deprecation-of-custom-code-in-sandboxed-solutions.aspx) sandbox solution model).
 
 [The Dynamite project](https://github.com/GSoft-SharePoint/Dynamite) for SharePoint 2013 (built by [GSoft](http://gsoft.com)'s SharePoint development experts - Team Dynamite) is a C# toolkit of reusable components that guide you into the "right" path for full-trust solution development. A version of [Dynamite for SharePoint 2010](https://github.com/GSoft-SharePoint/Dynamite-2010) is also available, for all of you who are still supporting legacy environments.
 
