@@ -1,6 +1,6 @@
 Welcome to the Dynamite wiki!
 
-### Contributor's guide
+### Git beginner's guide
 
 * Overview: [Getting started with SourceTree, Git and git-flow](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow)
 * Git step-by-step:
