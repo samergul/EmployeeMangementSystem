@@ -54,7 +54,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * Controlling the lifetime of your objects through Dynamite's custom lifetime scopes
 * Managing assembly versions and assembly dependencies
     * Avoid the pitfalls of full-trust (GAC-based) development scenarios
-    * Best practices for versioning and dependency management
+    * Best practices for assembly versioning and dependency management
 
 ### 2. Automate your deployments and upgrades end-to-end with the Dynamite PowerShell Toolkit
 
