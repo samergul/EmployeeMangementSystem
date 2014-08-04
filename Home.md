@@ -39,9 +39,7 @@ Some essential values put forward by Dynamite are the following:
     * to eliminate your dependency on SharePoint's often hard-to-upgrade XML-based definitions
     * to easily maintain your solutions in the long term within the enterprise
 
-Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide]. The Dynamite toolkit and the guide that follows are the end results of applying these ideas in the wild in real-life enterprise scenarios since 2010.
-
-(WIP - Coming soon...)
+Many of these ideas take their origin in [Microsoft's patterns and practices team's famous SharePoint 2010 development guide](http://msdn.microsoft.com/en-us/library/ff770300.aspx). The Dynamite toolkit and the guide that follows are the end results of applying many of these ideas in the wild in real-life enterprise scenarios since 2010.
 
 This guide applies to SharePoint 2013 (and 2010) farm solution (i.e. full-trust WSPs) architecture
 * Getting started with the GSoft.Dynamite toolkit and Microsoft Unity for dependency injection
