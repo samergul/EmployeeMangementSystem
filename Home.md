@@ -56,7 +56,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * Avoid the pitfalls of full-trust development in GAC-based scenarios
     * Best practices for versioning and dependency management
 
-### 2. Automating your deployments with the Dynamite PowerShell Toolkit
+### 2. Automate your deployments end-to-end with the Dynamite PowerShell Toolkit
 
 * On the evils of Visual Studio-based deployments
 * Installing Dynamite's very own PowerShell module
