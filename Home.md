@@ -53,7 +53,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * Do's and Don'ts of Service Locator usage
 * Managing assembly versions and assembly dependencies
     * Avoid the pitfalls of full-trust development in GAC-based scenarios
-    * Best practices for versionning and dependency management
+    * Best practices for versioning and dependency management
 
 ### 2. Automating your deployments with the Dynamite PowerShell Toolkit
 
