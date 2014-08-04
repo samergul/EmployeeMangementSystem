@@ -34,7 +34,7 @@ Some essential values put forward by Dynamite are the following:
     * to avoid massive multi-project deployments when possible (i.e. modular rather than monolithic deployments)
 * Entirely automated deployments through templated PowerShell scripts
     * to avoid error-prone manual operations at all costs
-    * to provide a reproducible installation process across any SharePoint environment
+    * to provide a reproducible installation process in any SharePoint farm environment
 * Intelligent, code-driven, self-correcting features
     * to reduce risk when upgrading your SharePoint solutions
     * to eliminate your dependency on SharePoint's often hard-to-upgrade XML-based definitions
