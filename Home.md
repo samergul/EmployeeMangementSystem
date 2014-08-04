@@ -51,6 +51,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * How to set up your first application-wide Autofac service locator
     * How to provide your own reusable services through an Autofac registration module
     * Do's and Don'ts of Service Locator usage
+    * Controlling the lifetime of your objects through Dynamite's custom lifetime scopes
 * Managing assembly versions and assembly dependencies
     * Avoid the pitfalls of full-trust development in GAC-based scenarios
     * Best practices for versioning and dependency management
