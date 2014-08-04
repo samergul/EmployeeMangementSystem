@@ -13,7 +13,6 @@ All of Team Dynamite's projects are hosted on Github. We recommend using Atlassi
     * Part 5: [The stash is your best friend](https://github.com/GSoft-SharePoint/Dynamite/wiki/Git-step-by-step:-Part-5)
 * Advanced guides: 
     * How to back-port changes from the main Dynamite (2013) repo into Dynamite-2010's codebase
-    * Keeping two distinct TFS servers' projects in sync by using github.com as an intermediary
 
 ### Building modular SharePoint farm solutions with Dynamite
 
