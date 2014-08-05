@@ -28,7 +28,7 @@ public static MyStoryConfig
 }
 ```
 
-Jimmy thought "hey, this is great, I won't be copy-pasting ```"My Story's Great Title"```` all over the place anymore." An use that static utility he did:
+Jimmy thought "hey, this is great, I won't be copy-pasting ```"My Story's Great Title"```` all over the place anymore." An use that static utility he did, in some factory method, for example:
 
 ```
 public Book GetFullBookInformationForMyStory()
@@ -38,4 +38,10 @@ public Book GetFullBookInformationForMyStory()
 }  
 ```
 
-But then som
+But then someday Jimmy figured out that he had it wrong all along and that his system should support more than just one story (not just his!), so he went about and changed his method signature to this:
+
+```
+public Book GetFullBookInformationForStory(Story currentStory)
+```
+
+
