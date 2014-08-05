@@ -98,6 +98,7 @@ In the grand scheme of things, most classes will fall into two categories:
 
 2. "Newables"
     * Classes that you can call ```new``` on without worry
-    * Objects that encapsulate some data (and maybe some of its accompanying behavior)
-    * Think: Entities, Data Transfer Objects (DTO), Configuration data, etc. 
-    * [Newables shouln't have field references to any Service-type class](http://misko.hevery.com/2008/09/30/to-new-or-not-to-new/)
+    * Objects that encapsulate some data
+    * Think: Business Entities, Data Transfer Objects (DTO), View Models, Configuration data, etc. 
+    * Newables shouldn't have field references to any Service-type class, and ideally they should let other Service-type objects take care of implementing their dynamic behavior.
+
