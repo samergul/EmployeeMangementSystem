@@ -89,16 +89,13 @@ Jimmy was just following his best intentions, but still he felt frustrated. Jimm
 ##Services vs. "Newables"
 In the grand scheme of things, most classes will fall into two categories:
 
-1. Services
+* Services
     * Expert objects that encapsulates some logic
     * Services collaborate with other services to provide encapsulation for new behavior
     * Think: Controllers, Business logic experts, Repositories, Utilities, etc.
     * Services should implement an interface to emphasize the "contract" the service will respect and to allow for alternate implementations down the road (for example, the ```IBookBindingExpert``` above and its many implementations).
-    * Services should only depend on the interfaces of their collaborating services, to keep them decoupled from other expert implementation. Consequently, a service should never be responsible for 
-
-
-
-2. "Newables"
+    * Services should only depend on the interfaces of their collaborating services, to keep them decoupled from other expert implementation. Consequently, a service should never be responsible for instantiating one of its collaborators.
+* "Newables"
     * Classes that you can call ```new``` on without worry
     * Objects that encapsulate some data
     * Think: Business Entities, Data Transfer Objects (DTO), View Models, Configuration data, etc. 
