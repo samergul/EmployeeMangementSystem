@@ -27,7 +27,7 @@ Some essential values put forward by Dynamite are the following:
 
 * A truly modular architecture through Dependency Injection
     * to promote code reuse across projects
-    * to make your components easily testable
+    * to make your components easy to test
     * to provide extension points for alternative usages of your features (i.e. configurability)
     * to avoid massive multi-project deployments when possible (i.e. modular rather than monolithic deployments)
 * Entirely automated deployments through templated PowerShell scripts
@@ -42,11 +42,11 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 
 ### 1. A modular approach to building SharePoint farm solutions with Dynamite and Autofac
 
-* What is dependency injection?
-    * A quick primer on why inversion of control and dependency injection are "good things"
+* What is Dependency Injection?
+    * A quick primer on why Inversion of Control and Dependency Injection are "good things"
     * A case for using constructor injection for all your classes' dependencies
 * Building your first Module and Service Locator
-    * How to break up your Visual Studio solution in many projects with their own responsibilities
+    * How to break up your solution in many Visual Studio projects with their own responsibilities
     * Installing the Dynamite NuGet packages from our MyGet.org feed (and tips on how to handle package upgrades smoothly)
     * How to set up your first application-wide Autofac service locator
     * How to provide your own reusable services through an Autofac registration module
