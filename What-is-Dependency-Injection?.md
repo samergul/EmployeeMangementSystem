@@ -103,7 +103,7 @@ In the grand scheme of things, most OO classes will fall into one of two categor
 
 ##Dependency Injection
 
-Dependency Injection is a pattern for implementing the "collaboration of services" idea above. One form of dependency injection is called Constructor Injection goes like this:
+Dependency Injection is a pattern for implementing the "collaboration of services" idea above. One form of dependency injection is called Constructor Injection and it goes like this:
 
 ```
 public class SomeSmartService : ISomeSmartService
@@ -166,9 +166,28 @@ The Container holds all the "configuration" information about which class implem
 ```
 containerBuilder.RegisterType<MyVerySmartService>().As<ISmartService>();
 containerBuilder.RegisterType<CustomULSTraceLogger>().As<ILogger>();
+
+var container = new Container(containerBuilder);
 ```
 
-This configuration step is often called the "bootstrapping" stage of dependency injection. Once configured, the container becomes responsible for creating **all** Service-type objects. In effect, it becomes the "factory" for all your registered types. The container exposes this "mega-factory" through a pattern called Service Location.
+This configuration step is often called the "bootstrapping" stage of dependency injection. Once configured, the container becomes responsible for creating **all** Service-type objects. In effect, it becomes the "factory" for all your registered types. The container exposes this "mega-factory" functionality through a pattern called Service Location.
 
 #Service Location
+The process of dependency injection starts when, in your application code, you make a *type resolution request* to the container by giving it the interface you want to call:
 
+```
+// because of above configuration, this will return an instance of type MyVerySmartService
+var smartServiceInstance = container.Resolve<ISmartService>()
+
+smartServiceInstance.DoSmartStuff(...);
+```
+
+When you call ```.Resolve<ISmartService>()``` on the container, it looks up which implementation is registered (```MyVerySmartService```). It then reflects on the constructor of ```MyVerySmartService``` to determine what *other* dependencies it needs to look up and create before it can create the ```MyVerySmartService``` instance. 
+
+For example, the constructor of may look like ```public MyVerySmartInstance(ILogger log)``` and thus require an instance of ```ILogger```. Once the associated implementation ```CustomULSTraceLogger``` has been looked up, the custom logger constructor may depend itself on another interface, and so on.  This goes on recursively down the chain of constructors. 
+
+Thus, no matter how deep the chain of constructor dependencies go, the container will eventually return a ```MyVerySmaryService``` with its dependencies fully initialized all the way down the chain.
+
+ 
+
+This is 
