@@ -1,4 +1,6 @@
-The Dynamite toolkit is available as NuGet packages from our MyGet.org NuGet feeds. For the time being we maintain separate package feeds for stable releases and prerelease. Down the road, these feeds may get consolidated into a unique feed.
+The Dynamite toolkit is available as NuGet packages from our MyGet.org NuGet feeds. 
+
+For the time being we maintain separate package feeds for stable releases and prerelease. Down the road, these feeds may get consolidated into a unique feed.
 
 ##SharePoint 2013 feeds
 
@@ -24,5 +26,13 @@ You should only connect to one of the feeds at a time. In Visual Studio:
 6. The new feed should become available in your NuGet "Online" and "Updates" feeds.
 7. If you connected to a dev/prerelease feed, be sure to toggle the dropdown at the top right from *Stable only* to *Include prereleases*.
 
+##Available packages
 
+These two packages are available from each of the public feeds (2010 or 2013):
+
+###Project-specfic package: GSoft.Dynamite
+![GSoft.Dynamite Package](http://i.imgur.com/5qcWXpl.png)
+
+###Solution-wide package: GSoft.Dynamite.SP
+![GSoft.Dynamite.SP Package](http://i.imgur.com/dxcbsXW.png)
 
