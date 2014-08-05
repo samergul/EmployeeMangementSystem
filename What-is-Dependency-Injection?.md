@@ -77,3 +77,20 @@ But then Jimmy discovered that the old ```new Story(title, summary)``` construct
 So Jimmy was sad for a bit, but eventually he fixed it.
 
 
+##Lessons learned
+Jimmy was just following his best intentions, but still he felt frustrated. Jimmy's (contrived) examples lead us to two easy (and slightly oversimplified) conclusions:
+
+* using the ```static``` keyword is often a trap
+    * in the case of static classes, you may want to instantiate these de-facto singletons more than once at some point eventually
+* using the ```new``` keyword often shouldn't be your responsibility
+    * you shouldn't be the one responsible for instantiating your collaborating expert objects
+
+
+##Services vs. "Newables"
+In the grand scheme of things, most classes will fall into two categories:
+
+1. Services
+    * Expert objects that encapsulates some logic
+    * Services collaborate with other services to provide encapsulation for new behavior
+    * Think: Controllers, Business logic experts, Repositories, Utilities
+    * Services should implement an interface to emphasize the "contract" the service will respect and to allow for alternate implementations down the road (for example, the ```IBookBindingExpert``` above and its many implementations).
