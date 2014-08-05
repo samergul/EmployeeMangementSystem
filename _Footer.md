@@ -1,0 +1,1 @@
+[< Go back to Dynamite wiki home](https://github.com/GSoft-SharePoint/Dynamite/wiki)
