@@ -46,7 +46,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * A quick primer on why Inversion of Control containers and Dependency Injection are "good things"
     * A case for using Constructor Injection for all your classes' dependencies
 * Building your first Module and Service Locator
-    * How to break up your solution in many Visual Studio projects with their own responsibilities
+    * [How to break up your solution in many Visual Studio projects with their own responsibilities](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-break-up-your-solution-in-many-Visual-Studio-projects-with-their-own-responsibilities)
     * Installing the Dynamite NuGet packages from our MyGet.org feed (and tips on how to handle package upgrades smoothly)
     * How to set up your first application-wide Autofac service locator
     * How to provide your own reusable services through an Autofac registration module
