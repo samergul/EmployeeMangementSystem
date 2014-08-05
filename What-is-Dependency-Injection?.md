@@ -19,7 +19,7 @@ See [Larman 2004](http://en.wikipedia.org/wiki/GRASP_(object-oriented_design)) f
 Once upon a time, Jimmy coded up a nice little static utliity class to help him get the job done:
 
 ```
-public static MyStoryConfig 
+public static class MyStoryConfig 
 {
     public static string BookTitle 
     {
@@ -53,7 +53,7 @@ So Jimmy was sad for a bit, but eventually he fixed it.
 Once upon a time, Jimmy thought "hey, I've got all this book binding logic polluting my nice ```Story``` class and making things harder to understand, so I'd better  put all that stuff in a separate class". And refactor-out a ```BookBindingExpert``` he did:
 
 ```
-public Story
+public class Story
 {
     // Encapsulates all binding logic. 
     // E.g. use bbe.CalculateCostPerPage(this.book.NumberOfPages)
@@ -87,7 +87,7 @@ Jimmy was just following his best intentions, but still he felt frustrated. Jimm
 
 
 ##Services vs. "Newables"
-In the grand scheme of things, most classes will fall into two categories:
+In the grand scheme of things, most OO classes will fall into two categories:
 
 * Services
     * Expert objects that encapsulates some logic
@@ -97,7 +97,45 @@ In the grand scheme of things, most classes will fall into two categories:
     * Services should only depend on the interfaces of their collaborating services, to keep them decoupled from other expert implementation. Consequently, a service should never be responsible for instantiating one of its collaborators.
 * "Newables"
     * Classes that you can call ```new``` on without worry
-    * Objects that encapsulate some data
+    * Objects that encapsulate some data (passed in through the constructor)
     * Think: Business Entities, Data Transfer Objects (DTO), View Models, Configuration data, etc. 
     * Newables shouldn't have field references to any Service-type class, and ideally they should let other Service-type objects take care of implementing their dynamic behavior.
 
+##Dependency Injection
+
+Dependency Injection is a pattern for implementing the "collaboration of services" idea above. One form of dependency injection is called Constructor Injection goes like this:
+
+```
+public class SomeSmartService : ISomeSmartService
+{
+    private IOtherServiceX x;
+    private IOtherServiceY y;
+    private ILogger log;
+
+    public SomeSmartService(IOtherServiceX x, IOtherServiceY y, ILogger log)
+    {
+        this.xService = x;
+        this.yService = y;
+        this.log = log;
+    }
+
+    public SmartResult DoSmartStuff(SomeMethodInjectedContext ctx, bool someOption)
+    {
+        this.log.Info("Smart stuff starting");
+        var partX = this.xService.GetResult(ctx, someOption);
+        var partY = this.yService.GetResult(ctx, someOption);
+        return new SmartResult(partX, partY);
+    }
+}
+```
+
+The main rules are these:
+
+* Your Services should have only a single constructor
+* Your references to your collaborators/dependencies should be kept private
+    * it's not one else's business to know what set of collaborators a particular implementation uses
+
+One big advantage of constructor injection (over the alternative: Property Injection through class property setters) is this: with a single glance at the constructor you can determine:
+
+a) all the dependencies of your class (i.e. all your collaborators) - and infer from them roughly what the responsibilities of your class is
+b) whether your class is getting bloated by having too many dependencies injected through its constructor (after more than 5 or 6 collaborators, things can get [smelly](http://en.wikipedia.org/wiki/Code_smell) fast).
