@@ -94,3 +94,5 @@ public static class ProjectContainer
     }
 }
 ```
+
+Your container is now ready to be used across your WSP projects for service location. Please refer to [Do's and Don'ts of Service Locator usage](https://github.com/GSoft-SharePoint/Dynamite/wiki/Do's-and-Don'ts-of-Service-Locator-usage) for examples on how to use your container.
