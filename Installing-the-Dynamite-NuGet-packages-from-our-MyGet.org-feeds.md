@@ -35,17 +35,19 @@ The GSoft.Dynamite package adds a reference to the GSoft.Dynamite.DLL and its ut
 ![GSoft.Dynamite Package](http://i.imgur.com/5qcWXpl.png)
 
 ###Solution-wide package: GSoft.Dynamite.SP
-The GSoft.Dynamite.SP is a solution-wide NuGet package, meaning that it will not add any DLL references in your projects. Rather, this package will just download some files that you can use to help your quickstart your SharePoint custom development project.
+The GSoft.Dynamite.SP is a solution-wide NuGet package, meaning that it will not add any DLL references in your projects. Rather, this package will just download some files to your packages folder and then you can use to help your kickstart your SharePoint custom development project.
 
 Namely, the GSoft.Dynamite.SP package includes:
 * GSoft.Dynamite.WSP
-    * a solution package that provisions the following DLLs to the GAC
+    * a solution package that provisions the following DLLs to the GAC: GSoft.Dynamite.dll, Autofac.dll, Newtonsoft.Json.dll
+    * provides a few features to help you kickstart your project
+    * install it using ```Add-SPSolution <path-to-file>\GSoft.Dynamite.wsp``` then ```Install-SPSolution GSoft.Dynamite.wsp -Identity GSoft.Dynamite.wsp -GACDeployment``` (or use DSP's ```Deploy-DSPSolutions``` - see below)
 * The Dynamite PowerShell Toolkit (aka DSP)
     * a PowerShell module that can help you automate your project setup
     * install it locally by running the ```Install-DSPModule.ps1``` script
         * Please note that this module will modify your ```C:\Users\your.username\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1``` so that the SharePoint PowerShell Snap-in is attached to all regular PowerShell windows. Tweak your profile script manually to your liking after install if you don't like this behavior.
+    * use ```Get-DSPCommand``` to list all available commands
 
-
-
+Thus, the NuGet package GSoft.Dynamite.SP is the perfect companion to GSoft.Dynamite to ensure that the Dynamite DLL and its dependencies are properly deployed to the GAC.
 ![GSoft.Dynamite.SP Package](http://i.imgur.com/dxcbsXW.png)
 
