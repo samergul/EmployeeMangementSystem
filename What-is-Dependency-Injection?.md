@@ -64,7 +64,7 @@ public class Story
 }
 ```
 
-But then someday, Jimmy realize that each story could potentially be printed at a different printers business, meaning that he shouldn't have just one type of ```BookBindingExpert```, but rather a ```PrinterBusinessXExpert``` and an alternative ```PrinterBusinessXExpert```, both implementors of a new ```IBookBindingExpert```. 
+But then someday, Jimmy realize that each story could potentially be printed at a different printers business, meaning that he shouldn't have just one type of ```BookBindingExpert```, but rather a ```PrinterBusinessXExpert``` and an alternative ```PrinterBusinessYExpert```, both implementors of a new ```IBookBindingExpert```. 
 
 Jimmy saw that the line ```new BookBindingExpert()``` needed to be changed in the ```Story``` class, so he thought: "that's ok, I'll just pass the right ```IBookBindingExpert``` into my ```Story``` constructor." So he changed the constructor to this:
 
