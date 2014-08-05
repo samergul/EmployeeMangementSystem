@@ -48,7 +48,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 * Building your first Module and Service Locator
     * [How to break up your solution in many Visual Studio projects with their own responsibilities](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-break-up-your-solution-in-many-Visual-Studio-projects-with-their-own-responsibilities)
     * Installing the Dynamite NuGet packages from our MyGet.org feed (and tips on how to handle package upgrades smoothly)
-    * How to set up your first application-wide Autofac service locator
+    * [How to set up your first application-wide Autofac service locator](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-set-up-your-first-application-wide-Autofac-service-locator)
     * How to provide your own reusable services through an Autofac registration module
     * Do's and Don'ts of Service Locator usage
     * Controlling the lifetime of your objects through Dynamite's custom lifetime scopes
@@ -67,7 +67,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 
 * Easy logging to the ULS (SharePoint's Unified Logging System) thanks to Dynamite's ILogger
 * Error-free resource management through the IResourceLocator interface
-* The case for intelligent, code-driven, self-correcting features
+* [The case for intelligent, code-driven, self-correcting features](https://github.com/GSoft-SharePoint/Dynamite/wiki/The-case-for-intelligent,-code-driven,-self-correcting-features)
     * E.g. provision your content types and lists programmatically instead of through XML for maximum 
 flexibility during upgrades
     * SharePoint's great upgrade conundrum: what to do with "click-programming" customizations that took place since your last deployment?
