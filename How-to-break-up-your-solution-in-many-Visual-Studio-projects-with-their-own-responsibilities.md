@@ -24,7 +24,6 @@ The main issue here is this: suppose that, in your project's context, you are ta
 So your project is going to be large. If you take the one-project-per-component-type approach above, you'll end up with something like this:
 
 ![project-per-component-type](http://i.imgur.com/LsBvblB.png)
-
 In effect, this gives you a little bit of each functionality in each Visual Studio project. Two major consequences are:
 
 1. It will hard to reuse any of these functionalities (for example, the Navigation functionality) without depending on the entire original project.
