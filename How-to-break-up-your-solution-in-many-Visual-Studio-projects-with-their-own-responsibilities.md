@@ -66,6 +66,7 @@ The "Core" assembly of a module holds the following:
 * the implementations of the Service interfaces declared in the Contracts DLL
 * the module's Autofac type registration module for dependency injection configuration
     * this module will be automatically scanned in the GAC by your application's Service Locator (see below) to make your module's types visible and reusable across the Autofac application container's app domain.
+    * see [this other article about how to build your own registration module](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-provide-your-own-reusable-services-through-an-Autofac-registration-module)
 
 
 ### Company.Project.Module.wsp
