@@ -5,11 +5,11 @@ When you start a brand new Visual Studio solution for SharePoint development, it
 One instinct is to split up your solution in many WSP (SharePoint-type) projects, with one project per type of component. Another idea is to spin off most C# in a core class library. For example:
 
 * > Company.Project.sln
+    * > Company.Project.Branding.wsp
     * > Company.Project.ContentTypes.wsp
-    * > Company.Porject.Branding.wsp
     * > Company.Project.Core.dll
-    * > Company.Project.WebParts.wsp
     * > Company.Project.PageLayouts.wsp
+    * > Company.Project.WebParts.wsp
     
 This type of separation of concerns is convenient from a developer's point of view, because each project has different "types" of components, so it's easy to get around the solution. The approach works for smallish projects but begins to show some cracks as the project gets larger.
 
@@ -33,7 +33,17 @@ If we want to avoid this "monolithic" model, we need to bring in a more modular 
 
 ## All aboard the modular train
 
-The modular approach that we recommend is one where a group of three projects is used for every "functional module"
+The modular approach that we recommend to maximize code reuse is one where a group of three projects is used for every "functional module". For example:
+
+* > Company.Project.sln
+    * > Company.Project.Branding.wsp
+    * > Company.Project.Nav.wsp
+    * > Company.Project.Nav.Contracts.dll
+    * > Company.Project.Nav.Core.dll
+    * > Company.Project.News.wsp
+    * > Company.Project.News.Contracts.dll
+    * > Company.Project.News.Core.dll
+    * > Company.Project.Search.wsp
 
 
 
