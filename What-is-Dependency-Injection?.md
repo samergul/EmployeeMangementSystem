@@ -194,4 +194,6 @@ In short, you "locate" your Services through the ```container.Resolve``` method.
 
 To be more precise about the pattern names:
 * A "pure" Service Locator class will not allow you to register additional types,
-* while the Container pattern allows you to change the type registrations.
+* while the Container pattern allows you to change the type registrations (on top of allowing you to resolve your services).
+
+Thus, a service locator will always depend on an application container which was configured during an initial bootstrapping phase.
