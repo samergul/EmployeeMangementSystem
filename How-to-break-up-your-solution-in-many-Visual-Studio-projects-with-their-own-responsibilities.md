@@ -49,6 +49,10 @@ The modular approach that we recommend to maximize code reuse is one where a gro
 
 Note how the News and Nav functional modules come with their own Contracts and Core class libraries. Also note how they is no trace of a solution-wide "Company.Project.Core.dll" anymore. 
 
+Note how Branding and Search are smaller modules, and don't need to expose any reusable functionality through a Contracts DLL of their own.
+
+The roles of the Dependencies and ServiceLocator projects are explained below.
+
 ### Company.Project.Module.Contracts.dll
 
 The "Contracts" assembly of a module holds the following:
@@ -56,7 +60,7 @@ The "Contracts" assembly of a module holds the following:
 * The interfaces for all Services provided by the module
 * The business entities used to expose the module's data in C# objects (and often serialized to JSON when used client-side)
     * in effect, these entities are data serialization contracts for your module
-* Any static constants specific to the module
+* Any static constants specific to the module (site column names, content type ids, etc.)
 
 
 ### Company.Project.Module.Core.dll
@@ -76,3 +80,7 @@ The SharePoint solution package reserved for the module must take care of provis
 As soon as your project's service locator scans the GAC and finds the Autofac registration module, 
 
 Otherwise, your module's WSP is structured like a classic SharePoint project, with feature encapsulating your projet's provisioning operations. See [The case for intelligent, code driven, self correcting features](https://github.com/GSoft-SharePoint/Dynamite/wiki/The-case-for-intelligent,-code-driven,-self-correcting-features) for more on how to structure your features' activation behavior.
+
+### Company.Project.ServiceLocator.dll
+
+This class library project hold only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
