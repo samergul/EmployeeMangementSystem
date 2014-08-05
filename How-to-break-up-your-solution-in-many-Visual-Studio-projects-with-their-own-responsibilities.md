@@ -36,6 +36,7 @@ If we want to avoid this "monolithic" model, we need to bring in a more modular 
 The modular approach that we recommend to maximize code reuse is one where a group of three projects is used for every "functional module". For example:
 
 * > Company.Project.sln
+    * > Company.Farm.Dependencies.wsp
     * > Company.Project.Branding.wsp
     * > Company.Project.Nav.wsp
     * > Company.Project.Nav.Contracts.dll
@@ -44,6 +45,31 @@ The modular approach that we recommend to maximize code reuse is one where a gro
     * > Company.Project.News.Contracts.dll
     * > Company.Project.News.Core.dll
     * > Company.Project.Search.wsp
+    * > Company.Project.ServiceLocator.dll
+
+Note how the News and Nav functional modules come with their own Contracts and Core class libraries. Also note how they is no trace of a solution-wide "Company.Project.Core.dll" anymore. 
+
+### Company.Project.Module.Contracts.dll
+
+The "Contracts" assembly of a module holds the following:
+
+* The interfaces for all Services provided by the module
+* The business entities used to expose the module's data in C# objects (and often serialized to JSON when used client-side)
+    * in effect, these entities are data serialization contracts for your module
+* Any static constants specific to the module
 
 
+### Company.Project.Module.Core.dll
 
+The "Core" assembly of a module holds the following:
+
+* the implementations of the Service interfaces declared in the Contracts DLL
+* the module's Autofac type registration module for dependency injection configuration
+    * this module will be automatically scanned in the GAC by your application's Service Locator (see below) to make your module's types visible and reusable across the Autofac application container's app domain.
+
+
+### Company.Project.Module.wsp
+
+The SharePoint solution package reserved for the module must take care of provisioning both assemblies ```Company.Project.Module.Contracts.dll``` and ```Company.Project.Module.Core.dll``` in the Global Assembly Cache (GAC).
+
+As soon as 
