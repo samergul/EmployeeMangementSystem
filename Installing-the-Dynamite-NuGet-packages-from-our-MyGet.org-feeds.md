@@ -57,7 +57,7 @@ Updating NuGet packages can get a bit hairy if you are not careful.
 Be sure to follow these guidelines to avoid headaches:
 
 1. Include the download packages under source control whenever practical (this makes the solution work even if NuGet feeds are unavailable).
-2. Don't attempt to update packages that have already been updated by one of your coworkers concurrently. The merge conflict could be bloddy (and, under TFS, file locks could ruin your NuGet update operation very fast). 
+2. Don't attempt to update packages that have already been updated by one of your coworkers concurrently. The merge conflict could be bloody (and, under TFS, file locks could ruin your NuGet update operation very fast). 
 3. Update packages as part of a specific commit which includes as few other changes as possible. This way, the package update commit is completed quickly (less risk of merge conflicts, etc.)
 4. Before installing Dynamite or another package as a new reference on a project, stop and go update that package from another project which already depends on that package. If you don't, some if your projects may end up depending on different versions of Dynamite at the same time (both versions of the package would get installed side-by-side).
 5. Be sure to use the NuGet package management dialog available by right-clicking on your Visual Studio solution (*Manage NuGet Packages for Solution...*). Also, for updates, don't forget to switch from *Online* to the *Updates* tab:
