@@ -26,6 +26,14 @@ So your project is going to be large. If you take the one-project-per-component-
 ![project-per-component-type](http://i.imgur.com/LsBvblB.png)
 In effect, this gives you a little bit of each functionality in each Visual Studio project. Two major consequences are:
 
-1. It will hard to reuse any of these functionalities (for example, the Navigation functionality) without depending on the entire original project.
-2. If you decide that you want to extract one of these features out of the original solution to package it independently, you will have a bad time (because everything will probably coupled together).
+1. It will hard to reuse any of these functionalities (for example, the Navigation functionality) without depending on the entire original project. If you decide that you want to extract one of these features out of the original solution to package it independently, you will have a bad time (because everything will probably coupled together).
+2. *Perhaps most importantly* (for those of you living in the enterprise who live under strict release guidelines): Whenever you want to patch a small part of a feature, you will often be forced to redeploy all the WSP packages in your solution. This could mean a big slowdown in the process of quality assurance, authorization and deployment procedures - since much more of the application than needed comes under scrutiny and will need to be re-tested.
+
+If we want to avoid this "monolithic" model, we need to bring in a more modular approach.
+
+## All aboard the modular train
+
+The modular approach that we recommend is one where a group of three projects is used for every "functional module"
+
+
 
