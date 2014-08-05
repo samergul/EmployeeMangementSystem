@@ -73,4 +73,6 @@ The "Core" assembly of a module holds the following:
 
 The SharePoint solution package reserved for the module must take care of provisioning both assemblies ```Company.Project.Module.Contracts.dll``` and ```Company.Project.Module.Core.dll``` in the Global Assembly Cache (GAC).
 
-As soon as 
+As soon as your project's service locator scans the GAC and finds the Autofac registration module, 
+
+Otherwise, your module's WSP is structured like a classic SharePoint project, with feature encapsulating your projet's provisioning operations. See [The case for intelligent, code driven, self correcting features](https://github.com/GSoft-SharePoint/Dynamite/wiki/The-case-for-intelligent,-code-driven,-self-correcting-features) for more on how to structure your features' activation behavior.
