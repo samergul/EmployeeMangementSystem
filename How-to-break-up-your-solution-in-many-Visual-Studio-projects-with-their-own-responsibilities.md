@@ -89,7 +89,7 @@ This class library project hold only a single class: your project's application 
 
 This class library project holds only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
 
-For instructions on how to setup your Container so that all of your solution's modules are loaded correctly, please see [How to set up your first application-wide Autofac service locator]().
+For instructions on how to setup your Container so that all of your solution's modules are loaded correctly, please see [How to set up your first application-wide Autofac service locator](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-set-up-your-first-application-wide-Autofac-service-locator).
 
 ### Company.Farm.Dependencies.wsp
 
@@ -99,4 +99,11 @@ Besides deploying DLLs to the GAC, this WSP package does nothing else.
 
 Why centralize DLL deployment like this? Because, in a SharePoint on-premise environment, when any WSP can decide to deploy any DLL to the GAC, we need a strategy to prevent the following unfortunate scenario:
 
-1. 
+1. ProjectX.wsp packages the very common 3rd party DLL Newtonsoft.Json (the Json.NET serialization utility library) because one of its features needs it.
+2. Upon deployment to the farm, the Json.NET DLL becomes available in the GAC.
+3. ProjectY.wsp packages the same DLL in its WSP
+4. ProjectY.wsp is deployed to the farm. Suddenly, ProjectY.wsp become the WSP "responsible" for the JSON.NET DLL.
+5. ProjectY.wsp is uninstalled from the farm. This removes Newstonsoft.Json.DLL from the GAC.
+6. ProjectX's features are now broken, because the JSON.NET is absent from the GAC.
+
+Thus, across all solutions that deploy to the same corporate farm, you must maintain a single and only Dependencies project, responsible for providing all these 3rd party DLLs to all of your company's SharePoint solutions.
