@@ -172,7 +172,7 @@ var container = new Container(containerBuilder);
 
 This configuration step is often called the "bootstrapping" stage of dependency injection. Once configured, the container becomes responsible for creating **all** Service-type objects. In effect, it becomes the "factory" for all your registered types. The container exposes this "mega-factory" functionality through a pattern called Service Location.
 
-#Service Location
+##Service Location
 The process of dependency injection starts when, in your application code, you make a *type resolution request* to the container by giving it the interface you want to call:
 
 ```
