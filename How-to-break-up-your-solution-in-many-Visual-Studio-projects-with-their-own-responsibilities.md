@@ -28,7 +28,5 @@ So your project is going to be large. If you take the one-project-per-component-
 In effect, this gives you a little bit of each functionality in each Visual Studio project. Two major consequences are:
 
 1. It will hard to reuse any of these functionalities (for example, the Navigation functionality) without depending on the entire original project.
-2. Function
-
-If, in a subsequent project, you wish to reuse part of 
+2. If you decide that you want to extract one of these features out of the original solution to package it independently, you will have a bad time (because everything will probably coupled together).
 
