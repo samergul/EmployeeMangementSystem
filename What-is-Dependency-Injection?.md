@@ -189,5 +189,8 @@ For example, the constructor of may look like ```public MyVerySmartInstance(ILog
 Thus, no matter how deep the chain of constructor dependencies go, the container will eventually return a ```MyVerySmaryService``` with its dependencies fully initialized all the way down the chain.
 
  
+In short, you "locate" your Services through the ```container.Resolve``` method. This is the Service Location pattern.
 
-This is 
+To be more precise about the pattern names:
+* A "pure" Service Locator class will not allow you to register additional types,
+* while the Container pattern allows you to change the type registrations.
