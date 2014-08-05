@@ -87,7 +87,7 @@ Jimmy was just following his best intentions, but still he felt frustrated. Jimm
 
 
 ##Services vs. "Newables"
-In the grand scheme of things, most OO classes will fall into two categories:
+In the grand scheme of things, most OO classes will fall into one of two categories:
 
 * Services
     * Expert objects that encapsulates some logic
@@ -139,3 +139,23 @@ One big advantage of constructor injection (over the alternative: Property Injec
 
 a) all the dependencies of your class (i.e. all your collaborators) - and infer from them roughly what the responsibilities of your class is
 b) whether your class is getting bloated by having too many dependencies injected through its constructor (after more than 5 or 6 collaborators, things can get [smelly](http://en.wikipedia.org/wiki/Code_smell) fast).
+
+Another benefit of constructor injection is that it makes unit testing of your classes very easy (since all the dependencies of the object-under-test can be easily injected through the constructor:
+
+```
+// Arrange
+var fakeX = new DummyServiceXImplementation();    // implements IOtherServiceX
+var fakeY = new DummyServiceYImplementation();    // implements IOtherServiceY
+var fakeLog = MyFavorityMockingLibrary.MockInstance<ILogger>();
+
+var objectUnderTest = new SomeSmartService(fakeX, fakeY, fakeLog);
+
+// Act
+var result objectUnderTest.DoSmartStuff(null, true);
+
+// Assert
+Assert.IsTrue(result.IsSmart);
+```
+
+##Service Location (and Inversion of Control containers)
+
