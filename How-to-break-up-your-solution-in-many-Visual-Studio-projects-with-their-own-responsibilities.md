@@ -83,10 +83,6 @@ Otherwise, your module's WSP is structured like a classic SharePoint project, wi
 
 ### Company.Project.ServiceLocator.dll
 
-This class library project hold only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
-
-### Company.Project.ServiceLocator.dll
-
 This class library project holds only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
 
 For instructions on how to setup your Container so that all of your solution's modules are loaded correctly, please see [How to set up your first application-wide Autofac service locator](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-set-up-your-first-application-wide-Autofac-service-locator).
