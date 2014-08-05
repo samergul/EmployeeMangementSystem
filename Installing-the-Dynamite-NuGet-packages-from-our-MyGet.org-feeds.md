@@ -1,1 +1,28 @@
-Installing the Dynamite NuGet packages from our MyGet.org feeds
+The Dynamite toolkit is available as NuGet packages from our MyGet.org NuGet feeds. For the time being we maintain separate package feeds for stable releases and prerelease. Down the road, these feeds may get consolidated into a unique feed.
+
+##SharePoint 2013 feeds
+
+Stable feed: https://www.myget.org/F/dynamite-2010/
+
+Dev (prerelease) feed: https://www.myget.org/F/dynamite-2013-dev/
+
+##SharePoint 2010 feeds
+
+Stable feed: https://www.myget.org/F/dynamite-2010/
+
+Dev (prerelease) feed: https://www.myget.org/F/dynamite-2010-dev/
+
+##How to connect to one of the feeds?
+
+You should only connect to one of the feeds at a time. In Visual Studio:
+
+1. On your solution in Solution Explorer, right click and open *Manage NuGet Packages for Solution...*
+2. At the bottom left, open the *Settings*
+3. Press the + button at the top right to add a new feed.
+4. Copy-paste one of the above feed URLs. Pick a good name for the feed like "Dynamite Dev 2013".
+5. Press *Update*, then *Ok* to close the dialog.
+6. The new feed should become available in your NuGet "Online" and "Updates" feeds.
+7. If you connected to a dev/prerelease feed, be sure to toggle the dropdown at the top right from *Stable only* to *Include prereleases*.
+
+
+
