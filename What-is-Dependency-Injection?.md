@@ -140,7 +140,7 @@ One big advantage of constructor injection (over the alternative: Property Injec
 a) all the dependencies of your class (i.e. all your collaborators) - and infer from them roughly what the responsibilities of your class is
 b) whether your class is getting bloated by having too many dependencies injected through its constructor (after more than 5 or 6 collaborators, things can get [smelly](http://en.wikipedia.org/wiki/Code_smell) fast).
 
-Another benefit of constructor injection is that it makes unit testing of your classes very easy (since all the dependencies of the object-under-test can be easily injected through the constructor:
+Another benefit of constructor injection is that it makes unit testing of your classes very easy (since all the dependencies of the object-under-test can be easily injected through the constructor):
 
 ```
 // Arrange
@@ -157,5 +157,18 @@ var result objectUnderTest.DoSmartStuff(null, true);
 Assert.IsTrue(result.IsSmart);
 ```
 
-##Service Location (and Inversion of Control containers)
+##Inversion of Control Containers
+
+[Inversion of Control](http://martinfowler.com/articles/injection.html#InversionOfControl) in the context of Dependency Injection relates to how the tree-of-collaborating-objects is wired up and configured through a Container object.
+
+The Container holds all the "configuration" information about which class implements which interface. We call these "type registrations", where you link you Service interfaces to the specific implementations you wish to be injected when the interface is requested:
+
+```
+containerBuilder.RegisterType<MyVerySmartService>().As<ISmartService>();
+containerBuilder.RegisterType<CustomULSTraceLogger>().As<ILogger>();
+```
+
+This configuration step is often called the "bootstrapping" stage of dependency injection. Once configured, the container becomes responsible for creating **all** Service-type objects. In effect, it becomes the "factory" for all your registered types. The container exposes this "mega-factory" through a pattern called Service Location.
+
+#Service Location
 
