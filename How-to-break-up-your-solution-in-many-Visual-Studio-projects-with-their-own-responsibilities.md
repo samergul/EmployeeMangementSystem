@@ -77,10 +77,12 @@ The "Core" assembly of a module holds the following:
 
 The SharePoint solution package reserved for the module must take care of provisioning both assemblies ```Company.Project.Module.Contracts.dll``` and ```Company.Project.Module.Core.dll``` in the Global Assembly Cache (GAC).
 
-As soon as your project's service locator scans the GAC and finds the Autofac registration module, 
+As soon as your project's service locator scans the GAC and finds the Autofac registration module, your module's types will become available across the container's domain.
 
 Otherwise, your module's WSP is structured like a classic SharePoint project, with feature encapsulating your projet's provisioning operations. See [The case for intelligent, code driven, self correcting features](https://github.com/GSoft-SharePoint/Dynamite/wiki/The-case-for-intelligent,-code-driven,-self-correcting-features) for more on how to structure your features' activation behavior.
 
 ### Company.Project.ServiceLocator.dll
 
 This class library project hold only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
+
+### Company.Farm.Dependencies.wsp
