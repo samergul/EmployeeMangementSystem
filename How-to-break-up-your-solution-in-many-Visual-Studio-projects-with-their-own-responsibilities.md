@@ -105,3 +105,5 @@ Why centralize DLL deployment like this? Because, in a SharePoint on-premise env
 Thus, across all solutions that deploy to the same corporate farm, you must maintain a single and only Dependencies project, responsible for providing all these 3rd party DLLs to all of your company's SharePoint solutions.
 
 In our example above, ```Company.Farm.Dependencies.wsp``` is responsible for provisioning the ```Company.Project.ServiceLocator.dll``` in the GAC (since the WSP projects will depend on it - see [Do's and Don'ts of Service Locator usage](https://github.com/GSoft-SharePoint/Dynamite/wiki/Do's-and-Don'ts-of-Service-Locator-usage) for more).
+
+Don't forget to sign all the DLLs that you provision in the GAC: execution in a SharePoint context requires signing. Try to use a common signing key across all projects the Visual Studio solution (use *Add existing file > Add as link* in solution explorer to re-use the same key in every project).
