@@ -85,4 +85,18 @@ Otherwise, your module's WSP is structured like a classic SharePoint project, wi
 
 This class library project hold only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
 
+### Company.Project.ServiceLocator.dll
+
+This class library project holds only a single class: your project's application container - i.e. the class that will configure [Dependency Injection](https://github.com/GSoft-SharePoint/Dynamite/wiki/What-is-Dependency-Injection%3F) across your solution and that will be used for service location.
+
+For instructions on how to setup your Container so that all of your solution's modules are loaded correctly, please see [How to set up your first application-wide Autofac service locator]().
+
 ### Company.Farm.Dependencies.wsp
+
+The Dependencies WSP is responsible for deploying all 3rd party and common DLL dependencies across the Company's SharePoint farm (hence the .Farm namespace discriminator, to emphasize that you should only maintain one such project)
+
+Besides deploying DLLs to the GAC, this WSP package does nothing else.
+
+Why centralize DLL deployment like this? Because, in a SharePoint on-premise environment, when any WSP can decide to deploy any DLL to the GAC, we need a strategy to prevent the following unfortunate scenario:
+
+1. 
