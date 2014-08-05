@@ -51,7 +51,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * [How to set up your first application-wide Autofac service locator](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-set-up-your-first-application-wide-Autofac-service-locator)
     * How to provide your own reusable services through an Autofac registration module
     * [Do's and Don'ts of Service Locator usage](https://github.com/GSoft-SharePoint/Dynamite/wiki/Do's-and-Don'ts-of-Service-Locator-usage)
-    * Controlling the lifetime of your objects through Dynamite's custom lifetime scopes
+    * [Controlling the lifetime of your objects through Dynamite's custom lifetime scopes](https://github.com/GSoft-SharePoint/Dynamite/wiki/Controlling-the-lifetime-of-your-objects-through-Dynamite's-custom-lifetime-scopes)
 * Managing assembly versions and assembly dependencies
     * Avoid the pitfalls of full-trust (GAC-based) development scenarios
     * Best practices for assembly versioning and dependency management
