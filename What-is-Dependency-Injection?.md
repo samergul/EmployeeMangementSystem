@@ -138,6 +138,7 @@ The main rules are these:
 One big advantage of constructor injection (over the alternative: Property Injection through class property setters) is this: with a single glance at the constructor you can determine:
 
 a) all the dependencies of your class (i.e. all your collaborators) - and infer from them roughly what the responsibilities of your class is
+
 b) whether your class is getting bloated by having too many dependencies injected through its constructor (after more than 5 or 6 collaborators, things can get [smelly](http://en.wikipedia.org/wiki/Code_smell) fast).
 
 Another benefit of constructor injection is that it makes unit testing of your classes very easy (since all the dependencies of the object-under-test can be easily injected through the constructor):
