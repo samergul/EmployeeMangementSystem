@@ -41,7 +41,7 @@ The modular approach that we recommend to maximize code reuse is one where a gro
     * > Company.Project.Nav.wsp
     * > Company.Project.Nav.Contracts.dll
     * > Company.Project.Nav.Core.dll
-    * > Company.Project.News.wsp
+    * > Company.Project.*News*.wsp
     * > Company.Project.News.Contracts.dll
     * > Company.Project.News.Core.dll
     * > Company.Project.Search.wsp
