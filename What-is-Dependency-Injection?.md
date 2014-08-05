@@ -12,7 +12,7 @@ When building software components one should always strive for:
     * each object should be assigned highly-focused responsibilities
     * highly cohesive components are easier to manage and understand
 
-See (Larman \[2004\])[http://en.wikipedia.org/wiki/GRASP_(object-oriented_design)] for more on responsibility assignment patterns and practices.
+See (Larman 2004)[http://en.wikipedia.org/wiki/GRASP_(object-oriented_design)] for more on responsibility assignment patterns and practices.
 
 ##Story time
 
