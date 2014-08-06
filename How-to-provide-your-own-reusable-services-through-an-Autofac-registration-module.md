@@ -78,6 +78,6 @@ As the Autofac syntax makes clear, Autofac will only create one instance of ```Q
 
 Of course, this means you need to start to be careful with concurrency issues: for example, two concurrent HttpRequests can potentially update a singleton's state at the same time (leading to synchronization issues).
 
-Thus, Autofac registration module give us a hook to control how long our objects will last.
+Thus, Autofac registration modules give us hooks to control how long our objects will last.
 
-Dynamite provides you with more alternate lifetime scope that you can read about in 
+Dynamite provides you with more alternate lifetime scope that you can read about in [Controlling the lifetime of your objects through Dynamite's custom lifetime scopes](https://github.com/GSoft-SharePoint/Dynamite/wiki/Controlling-the-lifetime-of-your-objects-through-Dynamite's-custom-lifetime-scopes).
