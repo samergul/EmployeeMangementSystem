@@ -13,15 +13,15 @@ The solution: "templated" PowerShell and XML input files.
 All application settings need during the automated PowerShell should be initialized in this file:
 ```
 ## Common ##
-$DSP_IntactNet_TaxonomyAdmin = "spsdev\dev"
-$DSP_IntactNet_TaxonomyServiceName = "Managed Metadata Service"
-$DSP_IntactNet_SearchServiceName = "Search Service Application"
+$DSP_Project_TaxonomyAdmin = "spsdev\dev"
+$DSP_Project_TaxonomyServiceName = "Managed Metadata Service"
+$DSP_Project_SearchServiceName = "Search Service Application"
 
 ## Portal ##
-$DSP_IntactNet_WebApplicationUrl = "http://sptao"
-$DSP_IntactNet_SiteCollectionAdmin = "spsdev\dev"
-$DSP_IntactNet_SiteCollectionDatabase = "Company_Project"
-$DSP_IntactNet_SiteCollectionUrl = "http://sptao/sites/test
+$DSP_Project_WebApplicationUrl = "http://sptao"
+$DSP_Project_SiteCollectionAdmin = "spsdev\dev"
+$DSP_Project_SiteCollectionDatabase = "Company_Project"
+$DSP_Project_SiteCollectionUrl = "http://sptao/sites/test
 ```
 
 ## 2) The .template files
@@ -33,17 +33,17 @@ You should build most of your PowerShell scripts (and their XML input files) as 
 <Solutions>
   <Solution Path=".\GSoft.Dynamite.wsp">
     <WebApplications>
-      <WebApplication>[[DSP_IntactNet_WebApplicationUrl]]</WebApplication>
+      <WebApplication>[[DSP_Project_WebApplicationUrl]]</WebApplication>
     </WebApplications>
   </Solution>
   <Solution Path=".\Company.Project.Dependencies.wsp">
     <WebApplications>
-      <WebApplication>[[DSP_IntactNet_WebApplicationUrl]]</WebApplication>
+      <WebApplication>[[DSP_Project_WebApplicationUrl]]</WebApplication>
     </WebApplications>
   </Solution>
   <Solution Path=".\Company.Project.Branding.wsp">
     <WebApplications> 		
-      <WebApplication>[[DSP_IntactNet_WebApplicationUrl]]</WebApplication>
+      <WebApplication>[[DSP_Project_WebApplicationUrl]]</WebApplication>
     </WebApplications>	
   </Solution>
 ...
@@ -56,7 +56,7 @@ When you run ```Update-DSPTokens -UseHostName```, it will:
 1. Scan the current folder for a file matching the pattern Tokens.CurrentHostName.ps1
 2. Run that script
 3. Look for files with the *.template extension in the current folder (and subfolders)
-4. Generate a new file for each template, replacing the tokens in them, and outputing the final .ps1 scripts and .xml inputs that will be actually used for setup on the machine.
+4. Generate a new file for each template, replacing the tokens in them, and outputting the final .ps1 scripts and .xml inputs that will be actually used for setup on the machine.
 
 The result:
 ```
@@ -79,3 +79,5 @@ The result:
   </Solution>
 ...
 ```
+
+This is a great time saver and it helps us avoid stupid mistakes.
