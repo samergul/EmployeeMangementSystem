@@ -1,4 +1,4 @@
-Please refer to [How to provide your own reusable services through an Autofac registration module](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-provide-your-own-reusable-services-through-an-Autofac-registration-module)
+For an introduction to container lifetimes, please refer to [How to provide your own reusable services through an Autofac registration module](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-provide-your-own-reusable-services-through-an-Autofac-registration-module) before moving on to this article.
 
 If you use the ```SharePointServiceLocator``` from Dynamite as a container, you gain access to Dynamite's custom, SharePoint-specific lifetimes:
 
