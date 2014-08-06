@@ -25,7 +25,7 @@ This is the core of the service locator/container. The interface ```ISharePointS
 
 Of course, Dynamite's own type registration module will be loaded earlier during bootstrapping (note that this allows you to override [Dynamite's own type registrations](https://github.com/GSoft-SharePoint/Dynamite/blob/develop/Source/GSoft.Dynamite/ServiceLocator/AutofacDynamiteRegistrationModule.cs) with your own alternate implementations - effectively replacing Dynamite's default implementations with your own across the Container's domain).
 
-##Exposing the service location on your container
+##Exposing service location on your container
 Once you have the core of your service locator, you can expose the service location methods of its ```innerLocator``` through simple delegation. The comments were copied from the ```SharePointServiceLocator``` implementation for quick reference:
 
 ```
