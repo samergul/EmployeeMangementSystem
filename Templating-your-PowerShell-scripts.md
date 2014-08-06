@@ -8,7 +8,7 @@ The issue we're trying to solve is this: we want to re-use the same scripts when
 
 The solution: "templated" PowerShell and XML input files.
 
-## 1) The Tokens.<YOUR-MACHINE-NAME-HERE>.ps1 file
+## 1) The Tokens.YOUR-MACHINE-NAME-HERE.ps1 file
 
 All application settings need during the automated PowerShell should be initialized in this file:
 ```
