@@ -13,7 +13,7 @@ If you use the ```SharePointServiceLocator``` from Dynamite as a container, you 
 
 ### How to use Dynamite's custom lifetimes
 
-Simply end you type registrations with the lifetime you want:
+Simply end your type registrations with the lifetime you want:
 
 ```
 builder.RegisterType<QuickLinkService>().As<IQuickLinkService>().InstancePerSite();
