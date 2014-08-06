@@ -49,7 +49,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
     * [How to break up your solution in many Visual Studio projects with their own responsibilities](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-break-up-your-solution-in-many-Visual-Studio-projects-with-their-own-responsibilities)
     * [Installing the Dynamite NuGet packages from our MyGet.org feeds](https://github.com/GSoft-SharePoint/Dynamite/wiki/Installing-the-Dynamite-NuGet-packages-from-our-MyGet.org-feeds) (and tips on how to handle package upgrades smoothly)
     * [How to set up your first application-wide Autofac service locator](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-set-up-your-first-application-wide-Autofac-service-locator)
-    * How to provide your own reusable services through an Autofac registration module
+    * [How to provide your own reusable services through an Autofac registration module](https://github.com/GSoft-SharePoint/Dynamite/wiki/How-to-provide-your-own-reusable-services-through-an-Autofac-registration-module)
     * [Do's and Don'ts of Service Locator usage](https://github.com/GSoft-SharePoint/Dynamite/wiki/Do's-and-Don'ts-of-Service-Locator-usage)
     * [Controlling the lifetime of your objects through Dynamite's custom lifetime scopes](https://github.com/GSoft-SharePoint/Dynamite/wiki/Controlling-the-lifetime-of-your-objects-through-Dynamite's-custom-lifetime-scopes)
 * Managing assembly versions and assembly dependencies
