@@ -50,4 +50,4 @@ Thus, as shown above, you should only use a Container within:
 * in an item event receiver
 * in a Timer Job's execution
 
-Those qualify as entry points to your application. You should keep logic within them to a minimum. Use your container to resolve an Expert object provided by your module's Contracts and Core so that you can delegate any heavy lifting that needs to be done. If you keep such business logic within your Core as much as possible, it will be much easier to unit test your components.
+Those qualify as entry points to your application. You should keep logic within them to a minimum. Use your container to resolve an Expert object provided by your module's Contracts and Core so that you can delegate any heavy lifting that needs to be done. If you keep such business logic within your Core as much as possible (i.e de-coupled from SharePoint), it will be much easier to unit test your components.
