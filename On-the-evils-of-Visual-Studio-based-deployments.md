@@ -47,4 +47,6 @@ There are a few occasions when it's a good idea to Retract All your WSP packages
     * if DLLs are still in the GAC while packaging, unexpected results may occur
 * Before adding or removing references to assemblies
     * playing with NuGet packages or with the Add Reference... dialog with DLLs still in the GAC can lead to issues
+* Before attempting to debug some code
+    * You will only be able to attach your debugger as long as the code currently in the GAC matches exactly what your have in Visual Studio. As soon as you build anything in Visual Studio, there is very little chance you will be able to attach again: you will need to retract, rebuild and redeploy.
 
