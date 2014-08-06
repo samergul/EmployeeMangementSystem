@@ -62,4 +62,22 @@ What you are saying to Autofac is
 
 i.e. Autofac will call ```new QuickLinkService(...)``` everytime the dependency injection tree requests a ```IQuickLinkService```.
 
-This behavior is called *transient lifetime*. 
+This behavior is called *transient lifetime*. These objects will typically will not last long and be garbage collected rather fast: they don't live long, they are transient.
+
+### Fourth: explore alternative lifetimes
+
+There are alternative options to configure the lifetime of your objects. You may have legitimate reasons to store state in some Services.
+
+One typical alternate lifetime is the Singleton:
+
+```
+builder.RegisterType<QuickLinkService>().As<IQuickLinkService>().SingleInstance();
+```
+
+As the Autofac syntax makes clear, Autofac will only create one instance of ```QuickLinkService``` and reuse the same instance whenever someone resolves a ```IQuickLinkService```.
+
+Of course, this means you need to start to be careful with concurrency issues: for example, two concurrent HttpRequests can potentially update a singleton's state at the same time (leading to synchronization issues).
+
+Thus, Autofac registration module give us a hook to control how long our objects will last.
+
+Dynamite provides you with more alternate lifetime scope that you can read about in 
