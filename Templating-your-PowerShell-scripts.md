@@ -1,4 +1,4 @@
-Once you run ```Install-DSPModule``` to install the Dynamite PowerShell Toolkit commands, you gain access to the following command:
+Once you run ```Install-DSPModule``` to install the Dynamite PowerShell Toolkit, you gain access to the following command:
 
 ```Update-DSPTokens -UseHostName```
 
