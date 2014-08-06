@@ -13,7 +13,7 @@ Thus, all your SharePoint projects in Visual Studio should target a site for dep
 
 So, when you use the Visual Studio *Deploy* functionality, all that happens on out real test site (which may reside under ```/``` or ```/sites/project-test``) is that the assemblies in the GAC are updated and that the IIS application pools has been recycled.
 
-## Automate your test site initialization process
+## Automate your test (and production) site initialization process
 
 It's up to you to maintain a suite of PowerShell scripts that 
 
