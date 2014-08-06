@@ -58,7 +58,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 
 ### 2. Automate your deployments and upgrades end-to-end with the Dynamite PowerShell Toolkit
 
-* On the evils of Visual Studio-based deployments
+* [On the evils of Visual Studio-based deployments](https://github.com/GSoft-SharePoint/Dynamite/wiki/On-the-evils-of-Visual-Studio-based-deployments)
 * Installing Dynamite's very own PowerShell module
 * Templating your PowerShell scripts thanks to the ```Update-DSPTokens``` command
 * Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.)
