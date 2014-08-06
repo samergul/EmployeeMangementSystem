@@ -15,11 +15,11 @@ So, when you use the Visual Studio *Deploy* functionality, all that happens on o
 
 It's up to you to maintain a suite of PowerShell scripts that 
 
-A. Deploy all the WSPs you need to your Farm
-B. Initializes service application (like the term store)
-C. Creates your site collections and subsites
-D. Activates the site and web features in the right sequence
-E. Furnish the test site with test data so that search can be configured automatically
-F. Trigger search crawls to complete a completely automated site configuration sequence.
+1. Deploy all the WSPs you need to your Farm
+2. Initializes service application (like the term store)
+3. Creates your site collections and subsites
+4. Activates the site and web features in the right sequence
+5. Furnish the test site with test data so that search can be configured automatically
+6. Trigger search crawls to complete a completely automated site configuration sequence.
 
 With such a repeatable installation process, you'll be ready when the time comes to deploy this to a live multi-server SharePoint environment.
