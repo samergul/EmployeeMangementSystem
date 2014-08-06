@@ -36,6 +36,8 @@ public override void FeatureActivated(SPFeatureReceiverProperties properties)
 
 The graph of inter-project dependencies should be this:
 
+![module-dependencies](http://i.imgur.com/GbXOGnj.png)
+
 Never use a container from within your Core class library. Dependencies of its Services are supposed to be injected through their constructor. Their types [must be registered in the Core's registration module](How to provide your own reusable services through an Autofac registration module).
 
 The container is meant to be used *only at the entry-point of your application*, to trigger the constructor injection hierarchy as maintained by Autofac.
