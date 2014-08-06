@@ -31,4 +31,6 @@ It's from those site-specific, web-specific and request-specife lifetime scopes 
 
 The parent-child hierarchy of lifetime scopes maintained by Dynamite looks like this:
 
+![lifetime-scope-hierarchy](http://i.imgur.com/H4W7zag.png)
+
 
