@@ -60,7 +60,7 @@ Many of these ideas take their origin in [Microsoft's patterns and practices tea
 
 * [On the evils of Visual Studio-based deployments](https://github.com/GSoft-SharePoint/Dynamite/wiki/On-the-evils-of-Visual-Studio-based-deployments)
 * [Installing Dynamite's very own PowerShell module](https://github.com/GSoft-SharePoint/Dynamite/wiki/Installing-Dynamite's-very-own-PowerShell-module)
-* Templating your PowerShell scripts thanks to the ```Update-DSPTokens``` command
+* [Templating your PowerShell scripts](https://github.com/GSoft-SharePoint/Dynamite/wiki/Templating-your-PowerShell-scripts) thanks to the ```Update-DSPTokens``` command
 * Best practices when deploying and updating your WSP farm solutions (separate PowerShell window, restart OWSTimer, etc.)
 
 ### 3. Making the best of Dynamite: discover its powerful and time-saving utilities
