@@ -80,4 +80,4 @@ The result:
 ...
 ```
 
-This is a great time saver because we reuse the same scripts everywhere and it helps us avoid stupid mistakes.
+This is a great time saver because we reuse the same scripts everywhere and it helps us avoid mistakes.
