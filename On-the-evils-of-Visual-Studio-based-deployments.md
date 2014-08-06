@@ -1,0 +1,1 @@
+On the evils of Visual Studio-based deployments
