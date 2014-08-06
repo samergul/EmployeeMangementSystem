@@ -27,6 +27,8 @@ It is critical to understand that objects which has a per-site, per-web or per-r
 
 To enable the site, web and request lifetimes, Dynamite's ```SharePointServiceLocator``` maintains a hierarchy of lifetime scopes (a hierarchy of parent and child containers, if you will).
 
+It's from those site-specific, web-specific and request-specife lifetime scopes that objects with the custom lifetimes (```InstancePerSite```, ```InstancePerWeb``` and ```InstancePerRequest```) will be resolved.
+
 The parent-child hierarchy of lifetime scopes maintained by Dynamite looks like this:
 
 
