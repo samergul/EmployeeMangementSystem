@@ -1,4 +1,4 @@
-## Get the latest GSoft.Dynamite.SP package
+## Get the latest GSoft.Dynamite.SP package, install DSP
 
 Refer to [Installing the Dynamite NuGet packages from our MyGet.org feeds](https://github.com/GSoft-SharePoint/Dynamite/wiki/Installing-the-Dynamite-NuGet-packages-from-our-MyGet.org-feeds) for instructions on how to get the latest version of the Dynamite PowerShell Toolkit (aka DSP) and how to install it.
 
