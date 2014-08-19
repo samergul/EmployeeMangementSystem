@@ -4,7 +4,7 @@ For the time being we maintain separate package feeds for stable releases and pr
 
 ##SharePoint 2013 feeds
 
-Stable feed: https://www.myget.org/F/dynamite-2010/
+Stable feed: https://www.myget.org/F/dynamite-2013/
 
 Dev (prerelease) feed: https://www.myget.org/F/dynamite-2013-dev/
 
